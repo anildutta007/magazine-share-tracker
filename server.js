@@ -191,8 +191,41 @@ const CURATED_PROFILES = {
     why_in_news_headline: 'Evening Trading Growth, 3,000+ UK Shop Target & Supply Chain Distribution Expansion',
     why_in_news_summary: 'Greggs is a frequent subject of debate in UK investment magazines as it scales toward 3,000+ UK outlets and expands hot food options for evening trade. Press commentary focuses on resilient like-for-like sales despite high-street footfall fluctuations, new automated logistics hubs in Derby and Kettering, and attractive special dividend potential once peak capex moderates.',
     catalyst_tags: ['2,550+ Shops (Target 3,000+)', 'Evening & Delivery Growth', 'Strong Cash Flow & ROCE', 'FTSE 250 Consumer Bellwether']
+  },
+  'RWA.L': {
+    ticker: 'RWA',
+    symbol: 'RWA.L',
+    name: 'Robert Walters plc',
+    sector: 'Industrials — Professional Recruitment & Staffing',
+    industry: 'Specialist Professional Recruitment, Outsourcing & Talent Advisory',
+    exchange: 'London Stock Exchange (LSE) — Main Market',
+    market_tier: 'UK Main Market — FTSE SmallCap (SETS)',
+    primary_index: 'FTSE SmallCap / FTSE All-Share',
+    indices: ['FTSE SmallCap', 'FTSE All-Share'],
+    currency: 'GBp',
+    fallback_price: 135.0,
+    fallback_pe: 14.2,
+    fallback_yield: 4.85,
+    fallback_mcap_bn: 0.195,
+    business_summary: 'Robert Walters plc is a world-leading specialist professional recruitment and talent advisory group listed on the London Stock Exchange Main Market (FTSE SmallCap / FTSE All-Share). Operating across 31 countries (Asia-Pacific, Europe, UK, and the Americas), the group places permanent, contract, and interim professionals across accounting & finance, technology, legal, engineering, and financial services, alongside recruitment process outsourcing (Resource Solutions).',
+    why_in_news_headline: 'Cyclical Recovery Play in Global White-Collar Recruitment, Net Cash Balance Sheet & Operational Gearing',
+    why_in_news_summary: "Robert Walters (RWA.L) is frequently highlighted in Investors' Chronicle, Shares Magazine, and UK small/mid-cap value screens as a classic cyclical recovery play with substantial operational gearing. Over 80% of net fee income is generated internationally (notably Japan, Australia, and continental Europe). Analysts highlight its debt-free net cash balance sheet, disciplined cost base optimization, and substantial earnings rebound potential as global hiring confidence and interest-rate cuts take hold.",
+    catalyst_tags: ['FTSE SmallCap / All-Share', '80%+ International Fee Income', 'Net Cash Balance Sheet', 'Cyclical Hiring Recovery Play']
   }
 };
+
+function cleanCompanyName(rawName, fallbackSym) {
+  if (!rawName) return fallbackSym;
+  let cleaned = String(rawName)
+    .replace(/\s+ORD\s+\d+(\.\d+)?P\b/gi, '')
+    .replace(/\s+ORD\s+GBP\s*\d+(\.\d+)?\b/gi, '')
+    .replace(/\s+ORD\s+SHS\b/gi, '')
+    .trim();
+  if (cleaned === cleaned.toUpperCase() && cleaned.length > 4) {
+    cleaned = cleaned.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()).replace(/\bPlc\b/g, 'plc');
+  }
+  return cleaned || rawName;
+}
 
 function loadConstituentsCatalog() {
   const catalog = [];
@@ -306,7 +339,7 @@ function inferExchangeAndIndices(symbol, rawExchange = '', marketCap = 0) {
     return {
       exchange: 'London Stock Exchange (LSE Main Market / AIM)',
       market_tier: 'UK Small-Cap / AIM Growth',
-      primary_index: 'FTSE All-Share / FTSE AIM 100',
+      primary_index: 'FTSE SmallCap / FTSE All-Share',
       indices: ['FTSE SmallCap / FTSE AIM', 'FTSE All-Share'],
       currency: 'GBp',
       isa_sipp_eligible: true
@@ -347,7 +380,7 @@ async function searchShares(queryStr, limit = 10) {
   const q = (queryStr || '').trim();
   if (!q) return [];
   const qLower = q.toLowerCase();
-  const qClean = qLower.replace('.l', '').replace(/\./g, '');
+  const qClean = qLower.replace(/\.l$/i, '').replace(/\./g, '');
   const scored = [];
   const seen = new Set();
 
@@ -356,49 +389,78 @@ async function searchShares(queryStr, limit = 10) {
     const ticker = item.ticker.toLowerCase().replace(/\.$/, '');
     const nameLower = item.name.toLowerCase();
     let score = 0;
-    if (qLower === sym || qClean === ticker) score = 100;
-    else if (nameLower === qLower) score = 95;
-    else if (ticker.startsWith(qClean) && qClean.length >= 2) score = 85;
-    else if (nameLower.startsWith(qLower)) score = 80;
-    else if (nameLower.includes(qLower)) score = 65;
-    else if ((item.sector || '').toLowerCase().includes(qLower)) score = 35;
+    if (qLower === sym || qClean === ticker) score = (sym.endsWith('.l') ? 1000 : 980);
+    else if (nameLower === qLower) score = 950;
+    else if (nameLower.startsWith(qLower)) score = 860 + (sym.endsWith('.l') ? 20 : 0);
+    else if (ticker.startsWith(qClean) && qClean.length >= 2) score = 750;
+    else if (nameLower.includes(qLower) && qLower.length >= 3) score = 620;
 
     if (score > 0) scored.push({ score, item });
   }
 
+  // Always query Yahoo Finance if we don't have an exact match or have fewer than 6 results
+  const hasExactLocal = scored.some(s => s.score >= 950);
+  if (!hasExactLocal || scored.length < 6) {
+    const isShortTicker = /^[a-zA-Z0-9]{2,5}$/.test(q);
+    const searchUrls = [
+      `https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(q)}&quotesCount=8&newsCount=0`
+    ];
+    if (isShortTicker) {
+      searchUrls.unshift(`https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(q + '.L')}&quotesCount=5&newsCount=0`);
+    }
+
+    const responses = await Promise.all(searchUrls.map(u => fetchJsonHttps(u)));
+    for (const yData of responses) {
+      if (yData && Array.isArray(yData.quotes)) {
+        for (const yq of yData.quotes) {
+          const sym = (yq.symbol || '').toUpperCase();
+          if (!sym || !['EQUITY', 'ETF'].includes(yq.quoteType)) continue;
+          const baseTicker = sym.split('.')[0].toLowerCase();
+          const nameClean = cleanCompanyName(yq.longname || yq.shortname || sym, sym);
+          const nameLower = nameClean.toLowerCase();
+          const meta = inferExchangeAndIndices(sym, yq.exchange || '');
+          const secStr = (yq.sectorDisp && yq.industryDisp)
+            ? `${yq.sectorDisp} — ${yq.industryDisp}`
+            : (yq.sectorDisp || yq.sector || yq.industryDisp || 'Listed Equity');
+
+          let yScore = 400;
+          if (sym === `${qClean.toUpperCase()}.L`) yScore = 1000;
+          else if (sym === q.toUpperCase()) yScore = 980;
+          else if (baseTicker === qClean) yScore = 940 + (sym.endsWith('.L') ? 40 : 0);
+          else if (nameLower === qLower) yScore = 920;
+          else if (nameLower.startsWith(qLower)) yScore = 840 + (sym.endsWith('.L') ? 30 : 0);
+          else if (baseTicker.startsWith(qClean)) yScore = 580;
+
+          scored.push({
+            score: yScore,
+            item: {
+              symbol: sym,
+              ticker: sym.split('.')[0],
+              name: nameClean,
+              sector: secStr,
+              industry: yq.industryDisp || yq.industry || secStr,
+              exchange: meta.exchange,
+              primary_index: meta.primary_index,
+              indices: meta.indices,
+              currency: meta.currency
+            }
+          });
+        }
+      }
+    }
+  }
+
   scored.sort((a, b) => b.score - a.score);
   const results = [];
-  for (const s of scored.slice(0, limit)) {
+  for (const s of scored) {
     const symUp = s.item.symbol.toUpperCase();
     if (!seen.has(symUp)) {
       seen.add(symUp);
       results.push(s.item);
+      if (results.length >= limit) break;
     }
   }
-
-  if (results.length < 6) {
-    const yData = await fetchJsonHttps(`https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(q)}&quotesCount=8&newsCount=0`);
-    if (yData && Array.isArray(yData.quotes)) {
-      for (const yq of yData.quotes) {
-        const sym = yq.symbol || '';
-        if (!sym || !['EQUITY', 'ETF'].includes(yq.quoteType) || seen.has(sym.toUpperCase())) continue;
-        seen.add(sym.toUpperCase());
-        const meta = inferExchangeAndIndices(sym, yq.exchange || '');
-        results.push({
-          symbol: sym,
-          ticker: sym.split('.')[0],
-          name: yq.longname || yq.shortname || sym,
-          sector: yq.sectorDisp || yq.sector || yq.industryDisp || 'Listed Equity',
-          exchange: meta.exchange,
-          primary_index: meta.primary_index,
-          indices: meta.indices,
-          currency: meta.currency
-        });
-        if (results.length >= limit) break;
-      }
-    }
-  }
-  return results.slice(0, limit);
+  return results;
 }
 
 function formatPriceDisplay(val, currency) {
@@ -582,10 +644,11 @@ async function researchShare(queryStr, magazineMeta = {}) {
   const sym = baseInfo.symbol.toUpperCase();
   const curated = CURATED_PROFILES[sym] || {};
 
-  // Fetch live chart & news from Yahoo Finance
-  const [chartJson, searchJson] = await Promise.all([
+  // Fetch live chart, symbol metadata & news from Yahoo Finance
+  const [chartJson, symSearchJson, newsSearchJson] = await Promise.all([
     fetchJsonHttps(`https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=1mo&interval=1d`),
-    fetchJsonHttps(`https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent((curated.name || baseInfo.name) + ' ' + (curated.ticker || baseInfo.ticker))}&quotesCount=1&newsCount=6`)
+    fetchJsonHttps(`https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(sym)}&quotesCount=3&newsCount=4`),
+    fetchJsonHttps(`https://query2.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(curated.name || baseInfo.name || sym)}&quotesCount=2&newsCount=6`)
   ]);
 
   let closes = [];
@@ -599,10 +662,22 @@ async function researchShare(queryStr, magazineMeta = {}) {
     volumes = (qInd.volume || []).filter(v => v != null).map(v => Math.round(v));
   }
 
-  const name = curated.name || chartMeta.longName || chartMeta.shortName || baseInfo.name || sym;
+  const yQuoteMatch = ((symSearchJson && symSearchJson.quotes) || []).find(q => (q.symbol || '').toUpperCase() === sym)
+    || ((symSearchJson && symSearchJson.quotes) || [])[0]
+    || {};
+
+  const searchJson = (newsSearchJson && Array.isArray(newsSearchJson.news) && newsSearchJson.news.length > 0)
+    ? newsSearchJson
+    : symSearchJson;
+
+  const rawResolvedName = curated.name || yQuoteMatch.longname || chartMeta.longName || baseInfo.name || yQuoteMatch.shortname || chartMeta.shortName || sym;
+  const name = cleanCompanyName(rawResolvedName, sym);
   const ticker = curated.ticker || baseInfo.ticker || sym.split('.')[0];
-  const sector = curated.sector || baseInfo.sector || 'Diversified Equities';
-  const industry = curated.industry || sector;
+  const ySectorStr = (yQuoteMatch.sectorDisp && yQuoteMatch.industryDisp)
+    ? `${yQuoteMatch.sectorDisp} — ${yQuoteMatch.industryDisp}`
+    : (yQuoteMatch.sectorDisp || yQuoteMatch.sector || '');
+  const sector = curated.sector || (baseInfo.sector && baseInfo.sector !== 'Global Equities' && baseInfo.sector !== 'Listed Equity' ? baseInfo.sector : '') || ySectorStr || 'Diversified Equities';
+  const industry = curated.industry || yQuoteMatch.industryDisp || yQuoteMatch.industry || baseInfo.industry || sector;
   const currency = curated.currency || chartMeta.currency || baseInfo.currency || (sym.endsWith('.L') ? 'GBp' : 'USD');
 
   const rawMcap = (curated.fallback_mcap_bn ? curated.fallback_mcap_bn * 1e9 : 3.4e9);
@@ -904,141 +979,154 @@ function readJsonBody(req) {
   });
 }
 
-// If invoked with --generate-data, write data.js and saved_shares.json and exit
-if (process.argv.includes('--generate-data')) {
-  initSeedsIfEmpty().then(() => {
-    const jsContent =
-      `window.INITIAL_SAVED_SHARES = ${JSON.stringify(SHARES_STORE, null, 2)};\n` +
-      `window.GLOBAL_CONSTITUENTS_CATALOG = ${JSON.stringify(CONSTITUENTS_CATALOG)};\n` +
-      `window.CURATED_SHARE_PROFILES = ${JSON.stringify(CURATED_PROFILES, null, 2)};\n`;
-    fs.writeFileSync(path.join(BASE_DIR, 'data.js'), jsContent, 'utf8');
-    console.log(`Generated data.js with ${SHARES_STORE.length} initial shares and ${CONSTITUENTS_CATALOG.length} catalog constituents.`);
-    process.exit(0);
-  });
-} else {
-  initSeedsIfEmpty().then(() => {
-    const server = http.createServer(async (req, res) => {
-      if (req.method === 'OPTIONS') return sendJson(res, { ok: true }, 200);
-      const parsedUrl = new URL(req.url, `http://${HOST}:${PORT}`);
-      const pathname = parsedUrl.pathname;
+async function handleRequest(req, res) {
+  if (req.method === 'OPTIONS') return sendJson(res, { ok: true }, 200);
+  const parsedUrl = new URL(req.url, `http://${req.headers.host || '127.0.0.1'}`);
+  const pathname = parsedUrl.pathname;
 
-      if (req.method === 'GET' && pathname === '/api/shares') {
-        return sendJson(res, { status: 'ok', count: SHARES_STORE.length, shares: SHARES_STORE });
-      }
+  if (SHARES_STORE.length === 0) {
+    await initSeedsIfEmpty();
+  }
 
-      if (req.method === 'GET' && pathname === '/api/search') {
-        const q = parsedUrl.searchParams.get('q') || '';
-        const results = await searchShares(q, 10);
-        return sendJson(res, { status: 'ok', query: q, results });
-      }
+  if (req.method === 'GET' && pathname === '/api/shares') {
+    return sendJson(res, { status: 'ok', count: SHARES_STORE.length, shares: SHARES_STORE });
+  }
 
-      if (req.method === 'GET' && pathname === '/api/research') {
-        const q = parsedUrl.searchParams.get('q') || '';
-        if (!q) return sendJson(res, { error: 'Missing query parameter q' }, 400);
-        const share = await researchShare(q);
-        return sendJson(res, { status: 'ok', share });
-      }
+  if (req.method === 'GET' && pathname === '/api/search') {
+    const q = parsedUrl.searchParams.get('q') || '';
+    const results = await searchShares(q, 10);
+    return sendJson(res, { status: 'ok', query: q, results });
+  }
 
-      if (req.method === 'POST' && pathname === '/api/shares') {
-        const body = await readJsonBody(req);
-        const q = (body.query || body.name || body.ticker || '').trim();
-        if (!q) return sendJson(res, { error: 'Please enter a share name or ticker symbol.' }, 400);
-        const meta = {
-          magazine: (body.magazine || "Investors' Chronicle").trim(),
-          issue_date: (body.issue_date || new Date().toISOString().slice(0, 10)).trim(),
-          magazine_stance: (body.magazine_stance || 'Buy Tip').trim(),
-          status: (body.status || 'To Research').trim(),
-          notes: (body.notes || '').trim()
-        };
-        const researched = await researchShare(q, meta);
-        researched.id = `share-${Date.now()}-${researched.ticker.toLowerCase().replace(/\./g, '')}`;
-        Object.assign(researched, meta, { added_at: new Date().toISOString().slice(0, 16).replace('T', ' ') });
+  if (req.method === 'GET' && pathname === '/api/research') {
+    const q = parsedUrl.searchParams.get('q') || '';
+    if (!q) return sendJson(res, { error: 'Missing query parameter q' }, 400);
+    const share = await researchShare(q);
+    return sendJson(res, { status: 'ok', share });
+  }
 
-        const existingIdx = SHARES_STORE.findIndex(s => s.symbol === researched.symbol);
-        if (existingIdx !== -1) {
-          researched.id = SHARES_STORE[existingIdx].id;
-          SHARES_STORE.splice(existingIdx, 1);
-        }
-        SHARES_STORE.unshift(researched);
-        saveStore();
-        return sendJson(res, { status: 'ok', share: researched, shares: SHARES_STORE }, 201);
-      }
+  if (req.method === 'POST' && pathname === '/api/shares') {
+    const body = (req.body && typeof req.body === 'object') ? req.body : await readJsonBody(req);
+    const q = (body.query || body.name || body.ticker || '').trim();
+    if (!q) return sendJson(res, { error: 'Please enter a share name or ticker symbol.' }, 400);
+    const meta = {
+      magazine: (body.magazine || "Investors' Chronicle").trim(),
+      issue_date: (body.issue_date || new Date().toISOString().slice(0, 10)).trim(),
+      magazine_stance: (body.magazine_stance || 'Buy Tip').trim(),
+      status: (body.status || 'To Research').trim(),
+      notes: (body.notes || '').trim()
+    };
+    const researched = await researchShare(q, meta);
+    researched.id = `share-${Date.now()}-${researched.ticker.toLowerCase().replace(/\./g, '')}`;
+    Object.assign(researched, meta, { added_at: new Date().toISOString().slice(0, 16).replace('T', ' ') });
 
-      if (req.method === 'POST' && pathname.startsWith('/api/shares/') && pathname.endsWith('/refresh')) {
-        const id = pathname.split('/')[3];
-        const idx = SHARES_STORE.findIndex(s => s.id === id);
-        if (idx === -1) return sendJson(res, { error: 'Share not found' }, 404);
-        const old = SHARES_STORE[idx];
-        const meta = {
-          magazine: old.magazine,
-          issue_date: old.issue_date,
-          magazine_stance: old.magazine_stance,
-          status: old.status,
-          notes: old.notes
-        };
-        const refreshed = await researchShare(old.symbol, meta);
-        Object.assign(refreshed, meta, { id: old.id, added_at: old.added_at });
-        SHARES_STORE[idx] = refreshed;
-        saveStore();
-        return sendJson(res, { status: 'ok', share: refreshed, shares: SHARES_STORE });
-      }
+    const existingIdx = SHARES_STORE.findIndex(s => s.symbol === researched.symbol);
+    if (existingIdx !== -1) {
+      researched.id = SHARES_STORE[existingIdx].id;
+      SHARES_STORE.splice(existingIdx, 1);
+    }
+    SHARES_STORE.unshift(researched);
+    saveStore();
+    return sendJson(res, { status: 'ok', share: researched, shares: SHARES_STORE }, 201);
+  }
 
-      if (req.method === 'POST' && pathname === '/api/shares/reset') {
-        if (fs.existsSync(SAVED_SHARES_FILE)) fs.unlinkSync(SAVED_SHARES_FILE);
-        await initSeedsIfEmpty();
-        return sendJson(res, { status: 'ok', shares: SHARES_STORE });
-      }
+  if (req.method === 'POST' && pathname.startsWith('/api/shares/') && pathname.endsWith('/refresh')) {
+    const id = pathname.split('/')[3];
+    const idx = SHARES_STORE.findIndex(s => s.id === id);
+    if (idx === -1) return sendJson(res, { error: 'Share not found' }, 404);
+    const old = SHARES_STORE[idx];
+    const meta = {
+      magazine: old.magazine,
+      issue_date: old.issue_date,
+      magazine_stance: old.magazine_stance,
+      status: old.status,
+      notes: old.notes
+    };
+    const refreshed = await researchShare(old.symbol, meta);
+    Object.assign(refreshed, meta, { id: old.id, added_at: old.added_at });
+    SHARES_STORE[idx] = refreshed;
+    saveStore();
+    return sendJson(res, { status: 'ok', share: refreshed, shares: SHARES_STORE });
+  }
 
-      if (req.method === 'PUT' && pathname.startsWith('/api/shares/')) {
-        const id = pathname.split('/')[3];
-        const idx = SHARES_STORE.findIndex(s => s.id === id);
-        if (idx === -1) return sendJson(res, { error: 'Share not found' }, 404);
-        const body = await readJsonBody(req);
-        const item = SHARES_STORE[idx];
-        ['magazine', 'issue_date', 'magazine_stance', 'status', 'notes'].forEach(f => {
-          if (body[f] !== undefined) item[f] = body[f];
-        });
-        item.ai_agent = buildAiAgentVerdict(item, item);
-        SHARES_STORE[idx] = item;
-        saveStore();
-        return sendJson(res, { status: 'ok', share: item, shares: SHARES_STORE });
-      }
+  if (req.method === 'POST' && pathname === '/api/shares/reset') {
+    if (fs.existsSync(SAVED_SHARES_FILE)) {
+      try { fs.unlinkSync(SAVED_SHARES_FILE); } catch (e) {}
+    }
+    await initSeedsIfEmpty();
+    return sendJson(res, { status: 'ok', shares: SHARES_STORE });
+  }
 
-      if (req.method === 'DELETE' && pathname.startsWith('/api/shares/')) {
-        const id = pathname.split('/')[3];
-        SHARES_STORE = SHARES_STORE.filter(s => s.id !== id);
-        saveStore();
-        return sendJson(res, { status: 'ok', shares: SHARES_STORE });
-      }
-
-      // Static file serving
-      let relPath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
-      let filePath = path.normalize(path.join(BASE_DIR, relPath));
-      if (!filePath.startsWith(BASE_DIR) || !fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
-        filePath = path.join(BASE_DIR, 'index.html');
-      }
-      const ext = path.extname(filePath).toLowerCase();
-      const mime = MIME_TYPES[ext] || 'application/octet-stream';
-      fs.readFile(filePath, (err, content) => {
-        if (err) {
-          res.writeHead(500);
-          return res.end('Internal Server Error');
-        }
-        res.writeHead(200, { 'Content-Type': mime });
-        res.end(content);
-      });
+  if (req.method === 'PUT' && pathname.startsWith('/api/shares/')) {
+    const id = pathname.split('/')[3];
+    const idx = SHARES_STORE.findIndex(s => s.id === id);
+    if (idx === -1) return sendJson(res, { error: 'Share not found' }, 404);
+    const body = (req.body && typeof req.body === 'object') ? req.body : await readJsonBody(req);
+    const item = SHARES_STORE[idx];
+    ['magazine', 'issue_date', 'magazine_stance', 'status', 'notes'].forEach(f => {
+      if (body[f] !== undefined) item[f] = body[f];
     });
+    item.ai_agent = buildAiAgentVerdict(item, item);
+    SHARES_STORE[idx] = item;
+    saveStore();
+    return sendJson(res, { status: 'ok', share: item, shares: SHARES_STORE });
+  }
 
-    server.listen(PORT, HOST, () => {
-      const url = `http://${HOST}:${PORT}`;
-      console.log('========================================================================');
-      console.log('  Magazine Share Tracker & AI Research Hub');
-      console.log('  Record Magazine Share Picks | Sector, Exchange & Index Lookup');
-      console.log('  Major Broker Consensus | Trending Status | News & AI Buy/Sell Agent');
-      console.log(`  Running locally at: ${url}`);
-      console.log('========================================================================\n');
-      const startCmd = process.platform === 'win32' ? `start "" "${url}"` : `xdg-open "${url}"`;
-      exec(startCmd, () => {});
-    });
+  if (req.method === 'DELETE' && pathname.startsWith('/api/shares/')) {
+    const id = pathname.split('/')[3];
+    SHARES_STORE = SHARES_STORE.filter(s => s.id !== id);
+    saveStore();
+    return sendJson(res, { status: 'ok', shares: SHARES_STORE });
+  }
+
+  // Static file serving
+  let relPath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
+  let filePath = path.normalize(path.join(BASE_DIR, relPath));
+  if (!filePath.startsWith(BASE_DIR) || !fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
+    filePath = path.join(BASE_DIR, 'index.html');
+  }
+  const ext = path.extname(filePath).toLowerCase();
+  const mime = MIME_TYPES[ext] || 'application/octet-stream';
+  fs.readFile(filePath, (err, content) => {
+    if (err) {
+      res.writeHead(500);
+      return res.end('Internal Server Error');
+    }
+    res.writeHead(200, { 'Content-Type': mime });
+    res.end(content);
   });
 }
+
+module.exports = handleRequest;
+module.exports.searchShares = searchShares;
+module.exports.researchShare = researchShare;
+
+if (require.main === module) {
+  if (process.argv.includes('--generate-data')) {
+    initSeedsIfEmpty().then(() => {
+      const jsContent =
+        `window.INITIAL_SAVED_SHARES = ${JSON.stringify(SHARES_STORE, null, 2)};\n` +
+        `window.GLOBAL_CONSTITUENTS_CATALOG = ${JSON.stringify(CONSTITUENTS_CATALOG)};\n` +
+        `window.CURATED_SHARE_PROFILES = ${JSON.stringify(CURATED_PROFILES, null, 2)};\n`;
+      fs.writeFileSync(path.join(BASE_DIR, 'data.js'), jsContent, 'utf8');
+      console.log(`Generated data.js with ${SHARES_STORE.length} initial shares and ${CONSTITUENTS_CATALOG.length} catalog constituents.`);
+      process.exit(0);
+    });
+  } else {
+    initSeedsIfEmpty().then(() => {
+      const server = http.createServer(handleRequest);
+      server.listen(PORT, HOST, () => {
+        const url = `http://${HOST}:${PORT}`;
+        console.log('========================================================================');
+        console.log('  Magazine Share Tracker & AI Research Hub');
+        console.log('  Record Magazine Share Picks | Sector, Exchange & Index Lookup');
+        console.log('  Major Broker Consensus | Trending Status | News & AI Buy/Sell Agent');
+        console.log(`  Running locally at: ${url}`);
+        console.log('========================================================================\n');
+        const startCmd = process.platform === 'win32' ? `start "" "${url}"` : `xdg-open "${url}"`;
+        exec(startCmd, () => {});
+      });
+    });
+  }
+}
+

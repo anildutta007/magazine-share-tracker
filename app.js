@@ -93,7 +93,7 @@
   function clientSearchCatalog(queryStr, limit = 10) {
     const q = (queryStr || '').trim().toLowerCase();
     if (!q) return [];
-    const qClean = q.replace('.l', '').replace(/\./g, '');
+    const qClean = q.replace(/\.l$/i, '').replace(/\./g, '');
     const catalog = window.GLOBAL_CONSTITUENTS_CATALOG || [];
     const scored = [];
     for (const item of catalog) {
@@ -101,12 +101,12 @@
       const ticker = (item.ticker || '').toLowerCase().replace(/\.$/, '');
       const name = (item.name || '').toLowerCase();
       let score = 0;
-      if (q === sym || qClean === ticker) score = 100;
-      else if (name === q) score = 95;
-      else if (ticker.startsWith(qClean) && qClean.length >= 2) score = 85;
-      else if (name.startsWith(q)) score = 80;
-      else if (name.includes(q)) score = 65;
-      else if ((item.sector || '').toLowerCase().includes(q)) score = 35;
+      if (q === sym || qClean === ticker) score = sym.endsWith('.l') ? 1000 : 980;
+      else if (name === q) score = 950;
+      else if (name.startsWith(q)) score = 860 + (sym.endsWith('.l') ? 20 : 0);
+      else if (ticker.startsWith(qClean) && qClean.length >= 2) score = 750;
+      else if (name.includes(q) && q.length >= 3) score = 620;
+      else if (q.length >= 4 && (item.sector || '').toLowerCase().includes(q)) score = 350;
       if (score > 0) scored.push({ score, item });
     }
     scored.sort((a, b) => b.score - a.score);
@@ -1146,17 +1146,25 @@
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(async () => {
       let matches = clientSearchCatalog(val, 8);
-      if (backendOnline && matches.length < 5) {
-        try {
-          const r = await fetch(`/api/search?q=${encodeURIComponent(val)}`);
-          if (r.ok) {
-            const data = await r.json();
-            if (Array.isArray(data.results) && data.results.length > 0) {
-              matches = data.results;
+      try {
+        const r = await fetch(`/api/search?q=${encodeURIComponent(val)}`);
+        if (r.ok) {
+          backendOnline = true;
+          const data = await r.json();
+          if (Array.isArray(data.results) && data.results.length > 0) {
+            const seen = new Set();
+            const merged = [];
+            for (const item of [...data.results, ...matches]) {
+              const symUp = (item.symbol || '').toUpperCase();
+              if (symUp && !seen.has(symUp)) {
+                seen.add(symUp);
+                merged.push(item);
+              }
             }
+            matches = merged.slice(0, 8);
           }
-        } catch (e) {}
-      }
+        }
+      } catch (e) {}
 
       if (matches.length === 0) {
         autocompleteDropdown.innerHTML = `
@@ -1214,20 +1222,26 @@
 
     try {
       let addedShare = null;
-      if (backendOnline) {
+      try {
         const res = await fetch('/api/shares', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ query: q, ...meta })
         });
         if (res.ok) {
+          backendOnline = true;
           const payload = await res.json();
-          if (payload.shares) {
-            savedShares = payload.shares;
+          if (payload.share) {
             addedShare = payload.share;
+            const existingIdx = savedShares.findIndex(s => s.symbol === addedShare.symbol);
+            if (existingIdx !== -1) {
+              addedShare.id = savedShares[existingIdx].id;
+              savedShares.splice(existingIdx, 1);
+            }
+            savedShares.unshift(addedShare);
           }
         }
-      }
+      } catch (apiErr) {}
 
       if (!addedShare) {
         addedShare = clientResearchShareFallback(q, meta);

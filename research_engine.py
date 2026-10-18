@@ -210,6 +210,27 @@ CURATED_PROFILES = {
         "why_in_news_headline": "Evening Trading Growth, 3,000+ UK Shop Target & Supply Chain Distribution Expansion",
         "why_in_news_summary": "Greggs is a frequent subject of debate in UK investment magazines as it scales toward 3,000+ UK outlets and expands hot food options for evening trade. Press commentary focuses on resilient like-for-like sales despite high-street footfall fluctuations, new automated logistics hubs in Derby and Kettering, and attractive special dividend potential once peak capex moderates.",
         "catalyst_tags": ["2,550+ Shops (Target 3,000+)", "Evening & Delivery Growth", "Strong Cash Flow & ROCE", "FTSE 250 Consumer Bellwether"]
+    },
+    "RWA.L": {
+        "ticker": "RWA",
+        "symbol": "RWA.L",
+        "name": "Robert Walters plc",
+        "sector": "Industrials — Professional Recruitment & Staffing",
+        "industry": "Specialist Professional Recruitment, Outsourcing & Talent Advisory",
+        "exchange": "London Stock Exchange (LSE) — Main Market",
+        "market_tier": "UK Main Market — FTSE SmallCap (SETS)",
+        "primary_index": "FTSE SmallCap / FTSE All-Share",
+        "indices": ["FTSE SmallCap", "FTSE All-Share"],
+        "currency": "GBp",
+        "currency_symbol": "£",
+        "fallback_price": 135.0,
+        "fallback_pe": 14.2,
+        "fallback_yield": 4.85,
+        "fallback_mcap_bn": 0.195,
+        "business_summary": "Robert Walters plc is a world-leading specialist professional recruitment and talent advisory group listed on the London Stock Exchange Main Market (FTSE SmallCap / FTSE All-Share). Operating across 31 countries (Asia-Pacific, Europe, UK, and the Americas), the group places permanent, contract, and interim professionals across accounting & finance, technology, legal, engineering, and financial services, alongside recruitment process outsourcing (Resource Solutions).",
+        "why_in_news_headline": "Cyclical Recovery Play in Global White-Collar Recruitment, Net Cash Balance Sheet & Operational Gearing",
+        "why_in_news_summary": "Robert Walters (RWA.L) is frequently highlighted in Investors' Chronicle, Shares Magazine, and UK small/mid-cap value screens as a classic cyclical recovery play with substantial operational gearing. Over 80% of net fee income is generated internationally (notably Japan, Australia, and continental Europe). Analysts highlight its debt-free net cash balance sheet, disciplined cost base optimization, and substantial earnings rebound potential as global hiring confidence and interest-rate cuts take hold.",
+        "catalyst_tags": ["FTSE SmallCap / All-Share", "80%+ International Fee Income", "Net Cash Balance Sheet", "Cyclical Hiring Recovery Play"]
     }
 }
 

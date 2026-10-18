@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "RWA",
+    "symbol": "RWA.L",
+    "name": "Robert Walters plc",
+    "sector": "Industrials — Professional Recruitment & Staffing",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "PAGE",
+    "symbol": "PAGE.L",
+    "name": "PageGroup plc",
+    "sector": "Industrials — Professional Recruitment & Staffing",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "HAS",
+    "symbol": "HAS.L",
+    "name": "Hays plc",
+    "sector": "Industrials — Recruitment & Human Resources",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "STEM",
+    "symbol": "STEM.L",
+    "name": "SThree plc",
+    "sector": "Industrials — STEM Specialist Staffing",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
     "ticker": "JET2",
     "symbol": "JET2.L",
     "name": "Jet2 plc",
@@ -124,7 +164,7 @@
     "symbol": "COST.L",
     "name": "Costain Group plc",
     "sector": "Construction & Infrastructure",
-    "market": "FTSE SmallCap",
+    "market": "FTSE SmallCap / FTSE All-Share",
     "exchange": "London Stock Exchange (Main Market)",
     "indices": ["FTSE SmallCap", "FTSE All-Share"],
     "currency": "GBp"
@@ -137,6 +177,396 @@
     "market": "FTSE 250",
     "exchange": "London Stock Exchange (Main Market)",
     "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "CARD",
+    "symbol": "CARD.L",
+    "name": "Card Factory plc",
+    "sector": "Consumer Discretionary — Specialty Retail",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "HFD",
+    "symbol": "HFD.L",
+    "name": "Halfords Group plc",
+    "sector": "Consumer Discretionary — Automotive & Cycling Services",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "WIX",
+    "symbol": "WIX.L",
+    "name": "Wickes Group plc",
+    "sector": "Consumer Discretionary — Home Improvement Retail",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "DFS",
+    "symbol": "DFS.L",
+    "name": "DFS Furniture plc",
+    "sector": "Consumer Discretionary — Home Furnishings",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "RNK",
+    "symbol": "RNK.L",
+    "name": "The Rank Group plc",
+    "sector": "Consumer Discretionary — Gaming & Leisure (Grosvenor / Mecca)",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "OTB",
+    "symbol": "OTB.L",
+    "name": "On the Beach Group plc",
+    "sector": "Consumer Discretionary — Online Package Holidays",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "SAGA",
+    "symbol": "SAGA.L",
+    "name": "Saga plc",
+    "sector": "Consumer Discretionary — Cruise, Travel & Insurance",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "FOXT",
+    "symbol": "FOXT.L",
+    "name": "Foxtons Group plc",
+    "sector": "Real Estate — Estate Agency & Lettings",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "GLE",
+    "symbol": "GLE.L",
+    "name": "MJ Gleeson plc",
+    "sector": "Consumer Discretionary — Affordable Housebuilding & Land",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "BOOT",
+    "symbol": "BOOT.L",
+    "name": "Henry Boot plc",
+    "sector": "Real Estate & Construction — Land Promotion & Property",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "SFR",
+    "symbol": "SFR.L",
+    "name": "Severfield plc",
+    "sector": "Industrials — Structural Steelwork & Engineering",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "VP.",
+    "symbol": "VP.L",
+    "name": "Vp plc",
+    "sector": "Industrials — Specialist Equipment Rental",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "MACF",
+    "symbol": "MACF.L",
+    "name": "Macfarlane Group plc",
+    "sector": "Industrials — Protective Packaging Distribution",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "RCDO",
+    "symbol": "RCDO.L",
+    "name": "Ricardo plc",
+    "sector": "Industrials — Environmental & Engineering Consultancy",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "TTG",
+    "symbol": "TTG.L",
+    "name": "TT Electronics plc",
+    "sector": "Technology — Engineered Electronics & Sensors",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "XPP",
+    "symbol": "XPP.L",
+    "name": "XP Power Limited",
+    "sector": "Technology — Power Solutions & Semiconductor Equipment",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "PRV",
+    "symbol": "PRV.L",
+    "name": "Porvair plc",
+    "sector": "Industrials — Specialist Filtration & Environmental Tech",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "AVON",
+    "symbol": "AVON.L",
+    "name": "Avon Technologies plc",
+    "sector": "Industrials — Defence Respiratory & Ballistic Protection",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "ZTF",
+    "symbol": "ZTF.L",
+    "name": "Zotefoams plc",
+    "sector": "Basic Materials — Cellular Material Technology",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "TET",
+    "symbol": "TET.L",
+    "name": "Treatt plc",
+    "sector": "Basic Materials — Natural Extracts & Beverage Ingredients",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "SQZ",
+    "symbol": "SQZ.L",
+    "name": "Serica Energy plc",
+    "sector": "Energy — UK North Sea Oil & Gas Production",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "YCA",
+    "symbol": "YCA.L",
+    "name": "Yellow Cake plc",
+    "sector": "Energy — Physical Uranium Investment",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "CWR",
+    "symbol": "CWR.L",
+    "name": "Ceres Power Holdings plc",
+    "sector": "Energy — Solid Oxide Fuel Cell & Electrolyser Tech",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "ITM",
+    "symbol": "ITM.L",
+    "name": "ITM Power plc",
+    "sector": "Energy — Green Hydrogen PEM Electrolysers",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "RPI",
+    "symbol": "RPI.L",
+    "name": "Raspberry Pi Holdings plc",
+    "sector": "Technology — Single-Board Computers & Edge Computing",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "FEVR",
+    "symbol": "FEVR.L",
+    "name": "Fevertree Drinks plc",
+    "sector": "Consumer Defensive — Premium Mixers & Beverages",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "YOU",
+    "symbol": "YOU.L",
+    "name": "YouGov plc",
+    "sector": "Communication Services — Global Research Data & Analytics",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "DOTD",
+    "symbol": "DOTD.L",
+    "name": "Dotdigital Group plc",
+    "sector": "Technology — SaaS Marketing Automation",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "ALFA",
+    "symbol": "ALFA.L",
+    "name": "Alfa Financial Software Holdings plc",
+    "sector": "Technology — Asset Finance Enterprise Software",
+    "market": "FTSE 250 / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "PAY",
+    "symbol": "PAY.L",
+    "name": "PayPoint plc",
+    "sector": "Financial Services — Retail Payments & Parcel Networks",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "CMCX",
+    "symbol": "CMCX.L",
+    "name": "CMC Markets plc",
+    "sector": "Financial Services — Online Trading & Institutional Platform",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "POLR",
+    "symbol": "POLR.L",
+    "name": "Polar Capital Holdings plc",
+    "sector": "Financial Services — Specialist Active Fund Management",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "IPX",
+    "symbol": "IPX.L",
+    "name": "Impax Asset Management Group plc",
+    "sector": "Financial Services — Sustainable & Transition Investing",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "CSN",
+    "symbol": "CSN.L",
+    "name": "Chesnara plc",
+    "sector": "Financial Services — Life & Pensions Consolidator",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "SBRE",
+    "symbol": "SBRE.L",
+    "name": "Sabre Insurance Group plc",
+    "sector": "Financial Services — Specialist UK Motor Insurance",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "BOWL",
+    "symbol": "BOWL.L",
+    "name": "Hollywood Bowl Group plc",
+    "sector": "Consumer Discretionary — Ten-Pin Bowling & Family Leisure",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "GYM",
+    "symbol": "GYM.L",
+    "name": "The Gym Group plc",
+    "sector": "Consumer Discretionary — Low-Cost 24/7 Fitness Clubs",
+    "market": "FTSE SmallCap / FTSE All-Share",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "VTU",
+    "symbol": "VTU.L",
+    "name": "Vertu Motors plc",
+    "sector": "Consumer Discretionary — Automotive Dealerships",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "HVO",
+    "symbol": "HVO.L",
+    "name": "hVIVO plc",
+    "sector": "Healthcare — Human Challenge Clinical Trials",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
     "currency": "GBp"
   },
   {
