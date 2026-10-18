@@ -1,0 +1,9 @@
+# Environment & OS files
+.env
+.env.local
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+node_modules/
+.vercel/

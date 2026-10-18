@@ -1,0 +1,65 @@
+/* Custom Styles for Magazine Share Tracker & AI Research Hub */
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth Card Hover & Transitions */
+.share-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.share-card:hover {
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.08), 0 4px 10px -3px rgba(15, 23, 42, 0.04);
+}
+
+/* Autocomplete Dropdown */
+#autocomplete-dropdown {
+  max-height: 360px;
+  overflow-y: auto;
+  box-shadow: 0 20px 35px -5px rgba(15, 23, 42, 0.16), 0 8px 14px -6px rgba(15, 23, 42, 0.08);
+}
+
+/* AI Agent Gradient Border Effect */
+.ai-agent-panel {
+  background: linear-gradient(135deg, rgba(240, 253, 244, 0.85) 0%, rgba(238, 242, 255, 0.9) 50%, rgba(240, 249, 255, 0.9) 100%);
+}
+
+/* Stacked Broker Bar */
+.broker-bar-segment {
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+  .share-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    margin-bottom: 1.5rem !important;
+  }
+}

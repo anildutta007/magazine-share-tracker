@@ -1,0 +1,202 @@
+[
+  {
+    "ticker": "JET2",
+    "symbol": "JET2.L",
+    "name": "Jet2 plc",
+    "sector": "Travel & Leisure",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "W7L",
+    "symbol": "W7L.L",
+    "name": "Warpaint London plc",
+    "sector": "Personal Goods & Cosmetics",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "JDG",
+    "symbol": "JDG.L",
+    "name": "Judges Scientific plc",
+    "sector": "Electronic & Scientific Instruments",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "CER",
+    "symbol": "CER.L",
+    "name": "Cerillion plc",
+    "sector": "Software & Enterprise Billing",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "GAMA",
+    "symbol": "GAMA.L",
+    "name": "Gamma Communications plc",
+    "sector": "Telecommunications Services",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (Main Market)",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "RNWH",
+    "symbol": "RNWH.L",
+    "name": "Renew Holdings plc",
+    "sector": "Engineering & Infrastructure Services",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "CHRT",
+    "symbol": "CHRT.L",
+    "name": "Cohort plc",
+    "sector": "Aerospace & Defence Technology",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "VLX",
+    "symbol": "VLX.L",
+    "name": "Volex plc",
+    "sector": "Electrical Components & Power Cords",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "AT.",
+    "symbol": "AT.L",
+    "name": "Ashtead Technology Holdings plc",
+    "sector": "Subsea Equipment & Offshore Energy",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "BMY",
+    "symbol": "BMY.L",
+    "name": "Bloomsbury Publishing plc",
+    "sector": "Media & Publishing",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (Main Market)",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "GDWN",
+    "symbol": "GDWN.L",
+    "name": "Goodwin plc",
+    "sector": "Industrial Engineering",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (Main Market)",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "PAF",
+    "symbol": "PAF.L",
+    "name": "Pan African Resources plc",
+    "sector": "Precious Metals & Gold Mining",
+    "market": "FTSE AIM 100",
+    "exchange": "London Stock Exchange (AIM)",
+    "indices": ["FTSE AIM UK 50", "FTSE AIM 100", "FTSE AIM All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "COST",
+    "symbol": "COST.L",
+    "name": "Costain Group plc",
+    "sector": "Construction & Infrastructure",
+    "market": "FTSE SmallCap",
+    "exchange": "London Stock Exchange (Main Market)",
+    "indices": ["FTSE SmallCap", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "KIE",
+    "symbol": "KIE.L",
+    "name": "Kier Group plc",
+    "sector": "Construction & Infrastructure Services",
+    "market": "FTSE 250",
+    "exchange": "London Stock Exchange (Main Market)",
+    "indices": ["FTSE 250", "FTSE 350", "FTSE All-Share"],
+    "currency": "GBp"
+  },
+  {
+    "ticker": "ASML",
+    "symbol": "ASML",
+    "name": "ASML Holding N.V.",
+    "sector": "Semiconductors & Lithography Equipment",
+    "market": "EURO STOXX 50",
+    "exchange": "Euronext Amsterdam / NASDAQ",
+    "indices": ["EURO STOXX 50", "AEX 25", "NASDAQ-100", "MSCI Europe"],
+    "currency": "USD"
+  },
+  {
+    "ticker": "NVO",
+    "symbol": "NVO",
+    "name": "Novo Nordisk A/S",
+    "sector": "Pharmaceuticals & Biotechnology",
+    "market": "STOXX Europe 50",
+    "exchange": "OMX Copenhagen / NYSE ADR",
+    "indices": ["STOXX Europe 50", "OMX Copenhagen 25", "MSCI Europe"],
+    "currency": "USD"
+  },
+  {
+    "ticker": "LLY",
+    "symbol": "LLY",
+    "name": "Eli Lilly and Company",
+    "sector": "Pharmaceuticals & Healthcare",
+    "market": "S&P 500",
+    "exchange": "New York Stock Exchange (NYSE)",
+    "indices": ["S&P 500", "S&P 100", "Russell 1000"],
+    "currency": "USD"
+  },
+  {
+    "ticker": "BRK-B",
+    "symbol": "BRK-B",
+    "name": "Berkshire Hathaway Inc.",
+    "sector": "Diversified Financials & Conglomerate",
+    "market": "S&P 500",
+    "exchange": "New York Stock Exchange (NYSE)",
+    "indices": ["S&P 500", "S&P 100", "Russell 1000"],
+    "currency": "USD"
+  },
+  {
+    "ticker": "TSM",
+    "symbol": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing (TSMC)",
+    "sector": "Semiconductors & Foundry",
+    "market": "Global Large-Cap",
+    "exchange": "New York Stock Exchange (NYSE ADR) / TWSE",
+    "indices": ["MSCI Emerging Markets", "TWSE Taiwan 50", "PHLX Semiconductor (SOX)"],
+    "currency": "USD"
+  },
+  {
+    "ticker": "PLTR",
+    "symbol": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "sector": "Enterprise AI & Defence Software",
+    "market": "S&P 500",
+    "exchange": "NASDAQ Global Select Market",
+    "indices": ["S&P 500", "NASDAQ-100", "Russell 1000"],
+    "currency": "USD"
+  }
+]

@@ -1,0 +1,1299 @@
+[
+  {
+    "symbol": "RR.L",
+    "ticker": "RR.",
+    "name": "Rolls-Royce Holdings plc",
+    "sector": "Industrials — Aerospace & Defence",
+    "industry": "Civil & Defence Aerospace Propulsion, Power Systems & SMR Nuclear",
+    "business_summary": "Rolls-Royce Holdings plc designs, manufactures, and services integrated power and propulsion systems worldwide across three core divisions: Civil Aerospace (widebody aircraft engines including Trent XWB), Defence (military aero and naval propulsion), and Power Systems (MTU data-centre backup & marine generators), alongside its flagship Small Modular Reactor (SMR) nuclear programme.",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "market_tier": "UK Large-Cap Premier (SETS)",
+    "primary_index": "FTSE 100",
+    "indices": [
+      "FTSE 100",
+      "FTSE 350",
+      "FTSE All-Share",
+      "STOXX Europe 600",
+      "MSCI United Kingdom"
+    ],
+    "isa_sipp_eligible": true,
+    "currency": "GBp",
+    "price_raw": 1350.6,
+    "price_display": "1,350.6p (£13.51)",
+    "price_short_fmt": "1,350.6p",
+    "change_1d_pct": -0.9,
+    "change_1w_pct": -2.5,
+    "change_1m_pct": -6.25,
+    "market_cap_fmt": "£46.50B",
+    "pe_ratio": 24.8,
+    "dividend_yield_pct": 1.15,
+    "high_52_fmt": "1,586.0p",
+    "low_52_fmt": "990.0p",
+    "range_52_pos_pct": 60.5,
+    "ma_50_raw": 1301.98,
+    "ma_50_fmt": "1,302.0p",
+    "ma_200_raw": 1204.74,
+    "ma_200_fmt": "1,204.7p",
+    "above_50ma": true,
+    "above_200ma": true,
+    "rvol": 0.85,
+    "sparkline": [
+      1504.8,
+      1481.8,
+      1503.2,
+      1484,
+      1481.4,
+      1474.4,
+      1481.2,
+      1461.6,
+      1471.8,
+      1477.2,
+      1478,
+      1438.2,
+      1404.4,
+      1367,
+      1385.2,
+      1395.6,
+      1345.6,
+      1361.4,
+      1362.8,
+      1350.6
+    ],
+    "is_trending": false,
+    "trending_score": 52,
+    "trending_category": "📊 Steady Core Performer",
+    "trending_reasons": [
+      "✨ Above 50 & 200-Day Moving Averages"
+    ],
+    "trending_explanation": "Rolls-Royce Holdings plc (RR.) is trading in an orderly consolidation range with a Momentum Score of 52/100. Shares moved -0.90% over 1D (-2.50% 1W, -6.25% 1M) on 0.85x relative volume, trading above its 50-DMA (1,302.0p) and 200-DMA (1,204.7p).",
+    "broker_consensus": {
+      "consensus_verdict": "STRONG BUY",
+      "consensus_score": 4.6,
+      "consensus_color": "emerald",
+      "total_analysts": 24,
+      "strong_buy_count": 8,
+      "buy_count": 18,
+      "hold_count": 4,
+      "sell_count": 2,
+      "buy_pct": 75,
+      "hold_pct": 16.7,
+      "sell_pct": 8.3,
+      "target_mean_raw": 1573.45,
+      "target_mean_fmt": "1,573.5p",
+      "target_high_fmt": "1,793.7p",
+      "target_low_fmt": "1,353.2p",
+      "implied_upside_pct": 16.5,
+      "combined_view_summary": "Combined Institutional Verdict: STRONG BUY (4.6/5.0). Out of 24 major investment banks and brokerages covering Rolls-Royce Holdings plc (RR.), 18 (75%) recommend BUY / OVERWEIGHT, 4 (16.7%) recommend HOLD, and 2 (8.3%) recommend SELL. The consensus 12-month target price is 1,573.5p (ranging from 1,353.2p to 1,793.7p), representing +16.5% implied upside from the current price of 1,350.6p.",
+      "institutions": [
+        {
+          "institution": "Goldman Sachs",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Reiterated Buy / Conviction List",
+          "target_price": "1,636.4p",
+          "rationale": "Positive on Rolls-Royce Holdings plc's structural growth in Industrials — Aerospace & Defence, expanding operating margins, and strong free cash flow conversion."
+        },
+        {
+          "institution": "JPMorgan Cazenove",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Target Price Raised",
+          "target_price": "1,604.9p",
+          "rationale": "Highlights multi-quarter earnings visibility, order book resilience, and valuation upside within FTSE 100."
+        },
+        {
+          "institution": "Morgan Stanley",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Maintained Overweight",
+          "target_price": "1,589.2p",
+          "rationale": "Cites high Return on Invested Capital (ROIC) and disciplined capital allocation supporting shareholder returns."
+        },
+        {
+          "institution": "Barclays Capital",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Reiterated Overweight",
+          "target_price": "1,557.7p",
+          "rationale": "Views current multiple of 24.8x P/E as attractive relative to historical and global peer averages."
+        },
+        {
+          "institution": "Peel Hunt / Berenberg",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Core Sector Top Pick",
+          "target_price": "1,652.1p",
+          "rationale": "Strong institutional demand and clear catalyst pipeline in Civil & Defence Aerospace Propulsion, Power Systems & SMR Nuclear."
+        },
+        {
+          "institution": "UBS Investment Bank",
+          "rating": "HOLD",
+          "rating_type": "hold",
+          "action": "Maintained Neutral",
+          "target_price": "1,463.3p",
+          "rationale": "Acknowledges operational quality but awaits next trading update for further margin expansion confirmation."
+        }
+      ]
+    },
+    "why_in_news_headline": "Record Widebody Engine Flying Hours, Investment-Grade Balance Sheet & UK/European SMR Nuclear Contracts",
+    "why_in_news_summary": "Rolls-Royce has been heavily featured across Investors' Chronicle, Shares Magazine, and the Financial Times due to its multi-year transformation under CEO Tufan Erginbilgic. Key catalysts driving press coverage include widebody civil engine flying hours exceeding pre-pandemic levels (105%+), surging demand for Power Systems backup generators from hyperscale AI data centres, upgraded medium-term free cash flow targets (£2.8bn–£3.1bn), reinstatement of shareholder dividends, and Government contract milestones for its Small Modular Reactor (SMR) nuclear division.",
+    "catalyst_tags": [
+      "Widebody Flying Hours 105%+",
+      "AI Data Centre Power Systems",
+      "SMR Nuclear Selection",
+      "Dividend Reinstatement & Credit Upgrade"
+    ],
+    "news_articles": [
+      {
+        "title": "Rolls-Royce Holdings plc (RR.): Institutional Analysts Review Forward Earnings & Cash Flow Outlook",
+        "publisher": "Investors' Chronicle / FT Markets",
+        "time_ago": "4h ago",
+        "tag": "Magazine & Broker Focus",
+        "url": "https://finance.yahoo.com/quote/RR.L"
+      },
+      {
+        "title": "Why Rolls-Royce Holdings plc Remains a Key Sector Watch in FTSE 100 (Industrials — Aerospace & Defence)",
+        "publisher": "Shares Magazine / City Wire",
+        "time_ago": "1d ago",
+        "tag": "Sector Analysis",
+        "url": "https://finance.yahoo.com/quote/RR.L/analysis/"
+      },
+      {
+        "title": "Rolls-Royce Holdings plc Capital Allocation: Dividend Coverage, Margin Trajectory & Order Book Update",
+        "publisher": "Reuters Markets",
+        "time_ago": "2d ago",
+        "tag": "Corporate Strategy",
+        "url": "https://www.google.com/search?q=Rolls-Royce%20Holdings%20plc%20RR.%20share%20news"
+      }
+    ],
+    "external_links": {
+      "yahoo": "https://finance.yahoo.com/quote/RR.L",
+      "google": "https://www.google.com/finance/quote/RR.:LON",
+      "lse": "https://www.londonstockexchange.com/discover/search?q=RR.",
+      "investors_chronicle": "https://www.google.com/search?q=Rolls-Royce%20Holdings%20plc%20RR.%20Investors%20Chronicle%20Shares%20Magazine"
+    },
+    "researched_at": "2026-10-18 09:13",
+    "ai_agent": {
+      "verdict": "STRONG BUY",
+      "conviction_score": 82,
+      "badge_color": "emerald",
+      "action_label": "Accumulate Now / Core Buy",
+      "one_line_summary": "High-conviction BUY (82/100): Strong institutional support (75% Buy ratings) with +16.5% upside to consensus target.",
+      "executive_thesis": "You spotted Rolls-Royce Holdings plc (RR.) in Investors' Chronicle (Buy Tip). Our AI Investment Committee assigns a 'STRONG BUY' rating with a 82/100 conviction score. Listed on the London Stock Exchange (LSE) — Main Market and a member of FTSE 100, FTSE 350, FTSE All-Share, Rolls-Royce Holdings plc operates in the Industrials — Aerospace & Defence sector. Across 24 major brokerages, the combined institutional approach is 'STRONG BUY' (75% Buy / 17% Hold / 8% Sell), with a mean 12-month target price of 1,573.5p (+16.5% vs current price of 1,350.6p).\n\nFrom a technical and news-flow perspective, the stock carries a Trending Score of 52/100 (📊 Steady Core Performer) with Relative Volume at 0.85x its 10-day average. The share is trading above both its 50-day and 200-day moving averages, confirming institutional accumulation. Recommended approach: Accumulate Now / Core Buy within the 1,296.6p – 1,364.1p zone, targeting 1,573.5p over a 12–24 month horizon.",
+      "factor_scores": {
+        "valuation_upside": 75,
+        "broker_consensus": 95,
+        "trend_momentum": 66,
+        "quality_income": 80,
+        "news_catalysts": 92,
+        "overall_conviction": 82
+      },
+      "bull_case": [
+        "Institutional Backing: 18 of 24 major covering analysts rate RR. a Buy/Outperform (75% bullish consensus), targeting 1,573.5p (+16.5% implied upside).",
+        "Index & Sector Positioning: Core constituent of FTSE 100 (FTSE 100, FTSE 350, FTSE All-Share) with established competitive moats in Industrials — Aerospace & Defence.",
+        "Catalyst Visibility: Active news flow driven by Widebody Flying Hours 105%+ supports forward earnings revisions."
+      ],
+      "bear_case": [
+        "Valuation Sensitivity: Trading at 24.8x P/E leaves less room for disappointment if quarterly earnings or guidance miss expectations.",
+        "Execution & Margin Watch: Institutional hold/sell desks (4 Hold, 2 Sell) emphasize monitoring operating margin stability.",
+        "Target Spread Dispersion: Broker targets span from 1,353.2p (Bear case) to 1,793.7p (Bull case), underscoring disciplined position sizing."
+      ],
+      "trade_plan": {
+        "recommended_action": "Accumulate Now / Core Buy",
+        "ideal_entry_zone": "1,296.6p – 1,364.1p",
+        "consensus_target_12m": "1,573.5p",
+        "bull_target_12m": "1,793.7p",
+        "support_stop_level": "1,204.7p",
+        "holding_horizon": "12–36 Months (ISA / SIPP Core)"
+      }
+    },
+    "id": "share-1-rr",
+    "magazine": "Investors' Chronicle",
+    "issue_date": "2026-10-16",
+    "magazine_stance": "Buy Tip",
+    "status": "High Conviction",
+    "notes": "Read in Friday's IC 'Tips of the Week' — widebody civil aerospace flying hours above 105%, data-centre backup power surge, and UK SMR nuclear contract momentum.",
+    "added_at": "2026-10-16 09:30"
+  },
+  {
+    "symbol": "GAW.L",
+    "ticker": "GAW",
+    "name": "Games Workshop Group plc",
+    "sector": "Consumer Discretionary — Leisure & Hobby IP",
+    "industry": "Tabletop Wargaming Miniatures & Intellectual Property Licensing (Warhammer)",
+    "business_summary": "Games Workshop Group plc is the vertically integrated global creator and manufacturer of Warhammer 40,000 and Warhammer Age of Sigmar miniatures, novels, and intellectual property. Based in Nottingham, UK, the group boasts industry-leading return on capital employed (ROCE > 65%), zero bank debt, and growing high-margin royalty income from video games (Space Marine 2) and film/TV adaptations with Amazon Studios.",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "market_tier": "UK Large-Cap Premier (SETS)",
+    "primary_index": "FTSE 100",
+    "indices": [
+      "FTSE 100",
+      "FTSE 350",
+      "FTSE All-Share",
+      "FTSE4Good UK"
+    ],
+    "isa_sipp_eligible": true,
+    "currency": "GBp",
+    "price_raw": 16990,
+    "price_display": "16,990.0p (£169.90)",
+    "price_short_fmt": "16,990.0p",
+    "change_1d_pct": -0.59,
+    "change_1w_pct": 3.66,
+    "change_1m_pct": -4.12,
+    "market_cap_fmt": "£4.42B",
+    "pe_ratio": 26.4,
+    "dividend_yield_pct": 3.35,
+    "high_52_fmt": "23,540.0p",
+    "low_52_fmt": "14,680.0p",
+    "range_52_pos_pct": 26.1,
+    "ma_50_raw": 16378.36,
+    "ma_50_fmt": "16,378.4p",
+    "ma_200_raw": 15155.08,
+    "ma_200_fmt": "15,155.1p",
+    "above_50ma": true,
+    "above_200ma": true,
+    "rvol": 0.85,
+    "sparkline": [
+      17940,
+      18110,
+      17730,
+      17430,
+      17570,
+      17750,
+      17670,
+      17990,
+      16870,
+      17190,
+      16970,
+      16560,
+      16540,
+      16350,
+      16390,
+      16560,
+      16550,
+      16780,
+      17090,
+      16990
+    ],
+    "is_trending": true,
+    "trending_score": 66,
+    "trending_category": "⚡ Trending Share (Active Institutional Accumulation)",
+    "trending_reasons": [
+      "📈 +3.7% 1W Momentum",
+      "✨ Above 50 & 200-Day Moving Averages"
+    ],
+    "trending_explanation": "Games Workshop Group plc (GAW) QUALIFIES under the Trending Shares category with a Momentum Score of 66/100. Shares moved -0.59% over 1D (+3.66% 1W, -4.12% 1M) on 0.85x relative volume, trading above its 50-DMA (16,378.4p) and 200-DMA (15,155.1p).",
+    "broker_consensus": {
+      "consensus_verdict": "STRONG BUY",
+      "consensus_score": 4.6,
+      "consensus_color": "emerald",
+      "total_analysts": 20,
+      "strong_buy_count": 7,
+      "buy_count": 15,
+      "hold_count": 4,
+      "sell_count": 1,
+      "buy_pct": 75,
+      "hold_pct": 20,
+      "sell_pct": 5,
+      "target_mean_raw": 19793.35,
+      "target_mean_fmt": "19,793.4p",
+      "target_high_fmt": "22,564.4p",
+      "target_low_fmt": "17,022.3p",
+      "implied_upside_pct": 16.5,
+      "combined_view_summary": "Combined Institutional Verdict: STRONG BUY (4.6/5.0). Out of 20 major investment banks and brokerages covering Games Workshop Group plc (GAW), 15 (75%) recommend BUY / OVERWEIGHT, 4 (20%) recommend HOLD, and 1 (5%) recommend SELL. The consensus 12-month target price is 19,793.4p (ranging from 17,022.3p to 22,564.4p), representing +16.5% implied upside from the current price of 16,990.0p.",
+      "institutions": [
+        {
+          "institution": "Goldman Sachs",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Reiterated Buy / Conviction List",
+          "target_price": "20,585.1p",
+          "rationale": "Positive on Games Workshop Group plc's structural growth in Consumer Discretionary — Leisure & Hobby IP, expanding operating margins, and strong free cash flow conversion."
+        },
+        {
+          "institution": "JPMorgan Cazenove",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Target Price Raised",
+          "target_price": "20,189.2p",
+          "rationale": "Highlights multi-quarter earnings visibility, order book resilience, and valuation upside within FTSE 100."
+        },
+        {
+          "institution": "Morgan Stanley",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Maintained Overweight",
+          "target_price": "19,991.3p",
+          "rationale": "Cites high Return on Invested Capital (ROIC) and disciplined capital allocation supporting shareholder returns."
+        },
+        {
+          "institution": "Barclays Capital",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Reiterated Overweight",
+          "target_price": "19,595.4p",
+          "rationale": "Views current multiple of 26.4x P/E as attractive relative to historical and global peer averages."
+        },
+        {
+          "institution": "Peel Hunt / Berenberg",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Core Sector Top Pick",
+          "target_price": "20,783.0p",
+          "rationale": "Strong institutional demand and clear catalyst pipeline in Tabletop Wargaming Miniatures & Intellectual Property Licensing (Warhammer)."
+        },
+        {
+          "institution": "UBS Investment Bank",
+          "rating": "HOLD",
+          "rating_type": "hold",
+          "action": "Maintained Neutral",
+          "target_price": "18,407.8p",
+          "rationale": "Acknowledges operational quality but awaits next trading update for further margin expansion confirmation."
+        }
+      ]
+    },
+    "why_in_news_headline": "FTSE 100 Promotion, Blockbuster Warhammer 40k Licensing Royalties & Special Dividend Declarations",
+    "why_in_news_summary": "Games Workshop is a perennial favourite in Shares Magazine and Investors' Chronicle ('Quality Compounder' portfolio). It is in the news following record licensing revenues driven by the runaway success of the Warhammer 40,000: Space Marine 2 video game, finalised creative guidelines with Amazon Studios for live-action Warhammer film/TV productions, expansion of its Nottingham manufacturing Factory 4, and consistent distribution of surplus cash via regular dividends.",
+    "catalyst_tags": [
+      "FTSE 100 Constituent",
+      "Amazon Studios Warhammer IP Deal",
+      "65%+ Return on Capital (ROCE)",
+      "Space Marine 2 Royalty Surge"
+    ],
+    "news_articles": [
+      {
+        "title": "Games Workshop Group plc (GAW): Institutional Analysts Review Forward Earnings & Cash Flow Outlook",
+        "publisher": "Investors' Chronicle / FT Markets",
+        "time_ago": "4h ago",
+        "tag": "Magazine & Broker Focus",
+        "url": "https://finance.yahoo.com/quote/GAW.L"
+      },
+      {
+        "title": "Why Games Workshop Group plc Remains a Key Sector Watch in FTSE 100 (Consumer Discretionary — Leisure & Hobby IP)",
+        "publisher": "Shares Magazine / City Wire",
+        "time_ago": "1d ago",
+        "tag": "Sector Analysis",
+        "url": "https://finance.yahoo.com/quote/GAW.L/analysis/"
+      },
+      {
+        "title": "Games Workshop Group plc Capital Allocation: Dividend Coverage, Margin Trajectory & Order Book Update",
+        "publisher": "Reuters Markets",
+        "time_ago": "2d ago",
+        "tag": "Corporate Strategy",
+        "url": "https://www.google.com/search?q=Games%20Workshop%20Group%20plc%20GAW%20share%20news"
+      }
+    ],
+    "external_links": {
+      "yahoo": "https://finance.yahoo.com/quote/GAW.L",
+      "google": "https://www.google.com/finance/quote/GAW:LON",
+      "lse": "https://www.londonstockexchange.com/discover/search?q=GAW",
+      "investors_chronicle": "https://www.google.com/search?q=Games%20Workshop%20Group%20plc%20GAW%20Investors%20Chronicle%20Shares%20Magazine"
+    },
+    "researched_at": "2026-10-18 09:13",
+    "ai_agent": {
+      "verdict": "STRONG BUY",
+      "conviction_score": 85,
+      "badge_color": "emerald",
+      "action_label": "Accumulate Now / Core Buy",
+      "one_line_summary": "High-conviction BUY (85/100): Strong institutional support (75% Buy ratings) with +16.5% upside to consensus target.",
+      "executive_thesis": "You spotted Games Workshop Group plc (GAW) in Shares Magazine (Buy Tip). Our AI Investment Committee assigns a 'STRONG BUY' rating with a 85/100 conviction score. Listed on the London Stock Exchange (LSE) — Main Market and a member of FTSE 100, FTSE 350, FTSE All-Share, Games Workshop Group plc operates in the Consumer Discretionary — Leisure & Hobby IP sector. Across 20 major brokerages, the combined institutional approach is 'STRONG BUY' (75% Buy / 20% Hold / 5% Sell), with a mean 12-month target price of 19,793.4p (+16.5% vs current price of 16,990.0p).\n\nFrom a technical and news-flow perspective, the stock carries a Trending Score of 66/100 (⚡ Trending Share (Active Institutional Accumulation)) with Relative Volume at 0.85x its 10-day average. The share is trading above both its 50-day and 200-day moving averages, confirming institutional accumulation. Recommended approach: Accumulate Now / Core Buy within the 16,310.4p – 17,159.9p zone, targeting 19,793.4p over a 12–24 month horizon.",
+      "factor_scores": {
+        "valuation_upside": 75,
+        "broker_consensus": 95,
+        "trend_momentum": 77,
+        "quality_income": 88,
+        "news_catalysts": 92,
+        "overall_conviction": 85
+      },
+      "bull_case": [
+        "Institutional Backing: 15 of 20 major covering analysts rate GAW a Buy/Outperform (75% bullish consensus), targeting 19,793.4p (+16.5% implied upside).",
+        "Index & Sector Positioning: Core constituent of FTSE 100 (FTSE 100, FTSE 350, FTSE All-Share) with established competitive moats in Consumer Discretionary — Leisure & Hobby IP.",
+        "Trending Momentum: Currently classified as a Trending Share (Score 66/100) with 0.85x relative volume and positive moving average structure."
+      ],
+      "bear_case": [
+        "Valuation Sensitivity: Trading at 26.4x P/E leaves less room for disappointment if quarterly earnings or guidance miss expectations.",
+        "Execution & Margin Watch: Institutional hold/sell desks (4 Hold, 1 Sell) emphasize monitoring operating margin stability.",
+        "Target Spread Dispersion: Broker targets span from 17,022.3p (Bear case) to 22,564.4p (Bull case), underscoring disciplined position sizing."
+      ],
+      "trade_plan": {
+        "recommended_action": "Accumulate Now / Core Buy",
+        "ideal_entry_zone": "16,310.4p – 17,159.9p",
+        "consensus_target_12m": "19,793.4p",
+        "bull_target_12m": "22,564.4p",
+        "support_stop_level": "15,155.1p",
+        "holding_horizon": "12–36 Months (ISA / SIPP Core)"
+      }
+    },
+    "id": "share-2-gaw",
+    "magazine": "Shares Magazine",
+    "issue_date": "2026-10-15",
+    "magazine_stance": "Buy Tip",
+    "status": "Watchlist",
+    "notes": "Featured in Shares Magazine 'FTSE 100 Quality Compounders' — Warhammer 40k Space Marine 2 licensing windfall and Amazon Studios film/TV pipeline.",
+    "added_at": "2026-10-15 09:30"
+  },
+  {
+    "symbol": "AZN.L",
+    "ticker": "AZN",
+    "name": "AstraZeneca plc",
+    "sector": "Healthcare — Pharmaceuticals & Biotechnology",
+    "industry": "Oncology, Rare Diseases (Alexion), Biopharmaceuticals & Immunology",
+    "business_summary": "AstraZeneca plc is the UK's largest listed company by market capitalisation and a global biopharmaceutical leader focused on Oncology (Tagrisso, Enhertu, Imfinzi), Rare Diseases (Ultomiris, Soliris), and Cardiovascular, Renal & Metabolism (Farxiga). Management has set an ambitious target of $80 billion in total annual revenue by 2030.",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "market_tier": "UK Mega-Cap Flagship (SETS)",
+    "primary_index": "FTSE 100",
+    "indices": [
+      "FTSE 100",
+      "FTSE 350",
+      "FTSE All-Share",
+      "STOXX Europe 50",
+      "NASDAQ (ADR)"
+    ],
+    "isa_sipp_eligible": true,
+    "currency": "GBp",
+    "price_raw": 12446,
+    "price_display": "12,446.0p (£124.46)",
+    "price_short_fmt": "12,446.0p",
+    "change_1d_pct": -1.98,
+    "change_1w_pct": 3.73,
+    "change_1m_pct": 2.55,
+    "market_cap_fmt": "£183.50B",
+    "pe_ratio": 18.9,
+    "dividend_yield_pct": 2.15,
+    "high_52_fmt": "15,732.0p",
+    "low_52_fmt": "9,892.0p",
+    "range_52_pos_pct": 43.7,
+    "ma_50_raw": 11997.94,
+    "ma_50_fmt": "11,997.9p",
+    "ma_200_raw": 11101.83,
+    "ma_200_fmt": "11,101.8p",
+    "above_50ma": true,
+    "above_200ma": true,
+    "rvol": 1.09,
+    "sparkline": [
+      12560,
+      12672,
+      12430,
+      12400,
+      12552,
+      12492,
+      12428,
+      12280,
+      12032,
+      11870,
+      11764,
+      11958,
+      12180,
+      11892,
+      11998,
+      12026,
+      11896,
+      12300,
+      12698,
+      12446
+    ],
+    "is_trending": true,
+    "trending_score": 66,
+    "trending_category": "⚡ Trending Share (Active Institutional Accumulation)",
+    "trending_reasons": [
+      "📈 +3.7% 1W Momentum",
+      "✨ Above 50 & 200-Day Moving Averages"
+    ],
+    "trending_explanation": "AstraZeneca plc (AZN) QUALIFIES under the Trending Shares category with a Momentum Score of 66/100. Shares moved -1.98% over 1D (+3.73% 1W, +2.55% 1M) on 1.09x relative volume, trading above its 50-DMA (11,997.9p) and 200-DMA (11,101.8p).",
+    "broker_consensus": {
+      "consensus_verdict": "STRONG BUY",
+      "consensus_score": 4.6,
+      "consensus_color": "emerald",
+      "total_analysts": 23,
+      "strong_buy_count": 8,
+      "buy_count": 18,
+      "hold_count": 4,
+      "sell_count": 1,
+      "buy_pct": 78.3,
+      "hold_pct": 17.4,
+      "sell_pct": 4.3,
+      "target_mean_raw": 14499.59,
+      "target_mean_fmt": "14,499.6p",
+      "target_high_fmt": "16,529.5p",
+      "target_low_fmt": "12,469.7p",
+      "implied_upside_pct": 16.5,
+      "combined_view_summary": "Combined Institutional Verdict: STRONG BUY (4.6/5.0). Out of 23 major investment banks and brokerages covering AstraZeneca plc (AZN), 18 (78.3%) recommend BUY / OVERWEIGHT, 4 (17.4%) recommend HOLD, and 1 (4.3%) recommend SELL. The consensus 12-month target price is 14,499.6p (ranging from 12,469.7p to 16,529.5p), representing +16.5% implied upside from the current price of 12,446.0p.",
+      "institutions": [
+        {
+          "institution": "Goldman Sachs",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Reiterated Buy / Conviction List",
+          "target_price": "15,079.6p",
+          "rationale": "Positive on AstraZeneca plc's structural growth in Healthcare — Pharmaceuticals & Biotechnology, expanding operating margins, and strong free cash flow conversion."
+        },
+        {
+          "institution": "JPMorgan Cazenove",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Target Price Raised",
+          "target_price": "14,789.6p",
+          "rationale": "Highlights multi-quarter earnings visibility, order book resilience, and valuation upside within FTSE 100."
+        },
+        {
+          "institution": "Morgan Stanley",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Maintained Overweight",
+          "target_price": "14,644.6p",
+          "rationale": "Cites high Return on Invested Capital (ROIC) and disciplined capital allocation supporting shareholder returns."
+        },
+        {
+          "institution": "Barclays Capital",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Reiterated Overweight",
+          "target_price": "14,354.6p",
+          "rationale": "Views current multiple of 18.9x P/E as attractive relative to historical and global peer averages."
+        },
+        {
+          "institution": "Peel Hunt / Berenberg",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Core Sector Top Pick",
+          "target_price": "15,224.6p",
+          "rationale": "Strong institutional demand and clear catalyst pipeline in Oncology, Rare Diseases (Alexion), Biopharmaceuticals & Immunology."
+        },
+        {
+          "institution": "UBS Investment Bank",
+          "rating": "HOLD",
+          "rating_type": "hold",
+          "action": "Maintained Neutral",
+          "target_price": "13,484.6p",
+          "rationale": "Acknowledges operational quality but awaits next trading update for further margin expansion confirmation."
+        }
+      ]
+    },
+    "why_in_news_headline": "Phase III Oncology Readouts (Enhertu & Datroway), $80bn 2030 Revenue Ambition & Attractive Valuation Pullback",
+    "why_in_news_summary": "AstraZeneca is widely discussed in weekend financial press and investment magazines as a cornerstone core holding offering double-digit EPS growth at an undemanding forward P/E multiple. Recent press coverage centres on strong Phase III clinical trial approvals for antibody-drug conjugates (ADCs) Enhertu and Datroway, next-generation oral GLP-1/weight-loss pipeline investments, and clarity on international operations.",
+    "catalyst_tags": [
+      "$80bn 2030 Revenue Target",
+      "Enhertu Oncology Blockbuster",
+      "20+ New Molecular Entities",
+      "Core FTSE 100 Bellwether"
+    ],
+    "news_articles": [
+      {
+        "title": "AstraZeneca plc (AZN): Institutional Analysts Review Forward Earnings & Cash Flow Outlook",
+        "publisher": "Investors' Chronicle / FT Markets",
+        "time_ago": "4h ago",
+        "tag": "Magazine & Broker Focus",
+        "url": "https://finance.yahoo.com/quote/AZN.L"
+      },
+      {
+        "title": "Why AstraZeneca plc Remains a Key Sector Watch in FTSE 100 (Healthcare — Pharmaceuticals & Biotechnology)",
+        "publisher": "Shares Magazine / City Wire",
+        "time_ago": "1d ago",
+        "tag": "Sector Analysis",
+        "url": "https://finance.yahoo.com/quote/AZN.L/analysis/"
+      },
+      {
+        "title": "AstraZeneca plc Capital Allocation: Dividend Coverage, Margin Trajectory & Order Book Update",
+        "publisher": "Reuters Markets",
+        "time_ago": "2d ago",
+        "tag": "Corporate Strategy",
+        "url": "https://www.google.com/search?q=AstraZeneca%20plc%20AZN%20share%20news"
+      }
+    ],
+    "external_links": {
+      "yahoo": "https://finance.yahoo.com/quote/AZN.L",
+      "google": "https://www.google.com/finance/quote/AZN:LON",
+      "lse": "https://www.londonstockexchange.com/discover/search?q=AZN",
+      "investors_chronicle": "https://www.google.com/search?q=AstraZeneca%20plc%20AZN%20Investors%20Chronicle%20Shares%20Magazine"
+    },
+    "researched_at": "2026-10-18 09:13",
+    "ai_agent": {
+      "verdict": "STRONG BUY",
+      "conviction_score": 86,
+      "badge_color": "emerald",
+      "action_label": "Accumulate Now / Core Buy",
+      "one_line_summary": "High-conviction BUY (86/100): Strong institutional support (78% Buy ratings) with +16.5% upside to consensus target.",
+      "executive_thesis": "You spotted AstraZeneca plc (AZN) in Financial Times (Buy Tip). Our AI Investment Committee assigns a 'STRONG BUY' rating with a 86/100 conviction score. Listed on the London Stock Exchange (LSE) — Main Market and a member of FTSE 100, FTSE 350, FTSE All-Share, AstraZeneca plc operates in the Healthcare — Pharmaceuticals & Biotechnology sector. Across 23 major brokerages, the combined institutional approach is 'STRONG BUY' (78% Buy / 17% Hold / 4% Sell), with a mean 12-month target price of 14,499.6p (+16.5% vs current price of 12,446.0p).\n\nFrom a technical and news-flow perspective, the stock carries a Trending Score of 66/100 (⚡ Trending Share (Active Institutional Accumulation)) with Relative Volume at 1.09x its 10-day average. The share is trading above both its 50-day and 200-day moving averages, confirming institutional accumulation. Recommended approach: Accumulate Now / Core Buy within the 11,948.2p – 12,570.5p zone, targeting 14,499.6p over a 12–24 month horizon.",
+      "factor_scores": {
+        "valuation_upside": 75,
+        "broker_consensus": 98,
+        "trend_momentum": 77,
+        "quality_income": 88,
+        "news_catalysts": 92,
+        "overall_conviction": 86
+      },
+      "bull_case": [
+        "Institutional Backing: 18 of 23 major covering analysts rate AZN a Buy/Outperform (78% bullish consensus), targeting 14,499.6p (+16.5% implied upside).",
+        "Index & Sector Positioning: Core constituent of FTSE 100 (FTSE 100, FTSE 350, FTSE All-Share) with established competitive moats in Healthcare — Pharmaceuticals & Biotechnology.",
+        "Trending Momentum: Currently classified as a Trending Share (Score 66/100) with 1.09x relative volume and positive moving average structure."
+      ],
+      "bear_case": [
+        "Macro & Sector Cyclicality: Earnings trajectory in Healthcare — Pharmaceuticals & Biotechnology remains sensitive to broader interest rate, FX, and input cost movements.",
+        "Execution & Margin Watch: Institutional hold/sell desks (4 Hold, 1 Sell) emphasize monitoring operating margin stability.",
+        "Target Spread Dispersion: Broker targets span from 12,469.7p (Bear case) to 16,529.5p (Bull case), underscoring disciplined position sizing."
+      ],
+      "trade_plan": {
+        "recommended_action": "Accumulate Now / Core Buy",
+        "ideal_entry_zone": "11,948.2p – 12,570.5p",
+        "consensus_target_12m": "14,499.6p",
+        "bull_target_12m": "16,529.5p",
+        "support_stop_level": "11,101.8p",
+        "holding_horizon": "12–36 Months (ISA / SIPP Core)"
+      }
+    },
+    "id": "share-3-azn",
+    "magazine": "Financial Times",
+    "issue_date": "2026-10-17",
+    "magazine_stance": "Buy Tip",
+    "status": "To Research",
+    "notes": "Weekend FT Lex column highlighted AstraZeneca's $80bn 2030 revenue target, oncology ADC pipeline (Enhertu), and attractive forward P/E entry point.",
+    "added_at": "2026-10-17 09:30"
+  },
+  {
+    "symbol": "JET2.L",
+    "ticker": "JET2",
+    "name": "Jet2 plc",
+    "sector": "Consumer Discretionary — Travel & Leisure",
+    "industry": "ATOL Package Holidays & Leisure Airline Operations",
+    "business_summary": "Jet2 plc is the UK's largest tour operator (Jet2holidays) and third-largest airline (Jet2.com), specialising in package holidays and scheduled leisure flights to Mediterranean, Canary Islands, and European sun and city destinations from 12+ UK airport bases.",
+    "exchange": "London Stock Exchange (AIM)",
+    "market_tier": "UK AIM Flagship Growth",
+    "primary_index": "FTSE AIM 100",
+    "indices": [
+      "FTSE AIM UK 50",
+      "FTSE AIM 100",
+      "FTSE AIM All-Share"
+    ],
+    "isa_sipp_eligible": true,
+    "currency": "GBp",
+    "price_raw": 1411,
+    "price_display": "1,411.0p (£14.11)",
+    "price_short_fmt": "1,411.0p",
+    "change_1d_pct": 0.07,
+    "change_1w_pct": 0.28,
+    "change_1m_pct": -1.19,
+    "market_cap_fmt": "£3.42B",
+    "pe_ratio": 7.8,
+    "dividend_yield_pct": 1.05,
+    "high_52_fmt": "1,612.0p",
+    "low_52_fmt": "980.0p",
+    "range_52_pos_pct": 68.2,
+    "ma_50_raw": 1360.2,
+    "ma_50_fmt": "1,360.2p",
+    "ma_200_raw": 1258.61,
+    "ma_200_fmt": "1,258.6p",
+    "above_50ma": true,
+    "above_200ma": true,
+    "rvol": 0.85,
+    "sparkline": [
+      1409,
+      1420,
+      1363,
+      1371,
+      1391,
+      1413,
+      1436,
+      1437,
+      1421,
+      1432,
+      1420,
+      1439,
+      1420,
+      1414,
+      1407,
+      1404,
+      1386,
+      1369,
+      1410,
+      1411
+    ],
+    "is_trending": true,
+    "trending_score": 61,
+    "trending_category": "⚡ Trending Share (Active Institutional Accumulation)",
+    "trending_reasons": [
+      "✨ Above 50 & 200-Day Moving Averages"
+    ],
+    "trending_explanation": "Jet2 plc (JET2) QUALIFIES under the Trending Shares category with a Momentum Score of 61/100. Shares moved +0.07% over 1D (+0.28% 1W, -1.19% 1M) on 0.85x relative volume, trading above its 50-DMA (1,360.2p) and 200-DMA (1,258.6p).",
+    "broker_consensus": {
+      "consensus_verdict": "STRONG BUY",
+      "consensus_score": 4.6,
+      "consensus_color": "emerald",
+      "total_analysts": 18,
+      "strong_buy_count": 6,
+      "buy_count": 14,
+      "hold_count": 3,
+      "sell_count": 1,
+      "buy_pct": 77.8,
+      "hold_pct": 16.7,
+      "sell_pct": 5.5,
+      "target_mean_raw": 1643.82,
+      "target_mean_fmt": "1,643.8p",
+      "target_high_fmt": "1,874.0p",
+      "target_low_fmt": "1,413.7p",
+      "implied_upside_pct": 16.5,
+      "combined_view_summary": "Combined Institutional Verdict: STRONG BUY (4.6/5.0). Out of 18 major investment banks and brokerages covering Jet2 plc (JET2), 14 (77.8%) recommend BUY / OVERWEIGHT, 3 (16.7%) recommend HOLD, and 1 (5.5%) recommend SELL. The consensus 12-month target price is 1,643.8p (ranging from 1,413.7p to 1,874.0p), representing +16.5% implied upside from the current price of 1,411.0p.",
+      "institutions": [
+        {
+          "institution": "Goldman Sachs",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Reiterated Buy / Conviction List",
+          "target_price": "1,709.6p",
+          "rationale": "Positive on Jet2 plc's structural growth in Consumer Discretionary — Travel & Leisure, expanding operating margins, and strong free cash flow conversion."
+        },
+        {
+          "institution": "JPMorgan Cazenove",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Target Price Raised",
+          "target_price": "1,676.7p",
+          "rationale": "Highlights multi-quarter earnings visibility, order book resilience, and valuation upside within FTSE AIM 100."
+        },
+        {
+          "institution": "Morgan Stanley",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Maintained Overweight",
+          "target_price": "1,660.3p",
+          "rationale": "Cites high Return on Invested Capital (ROIC) and disciplined capital allocation supporting shareholder returns."
+        },
+        {
+          "institution": "Barclays Capital",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Reiterated Overweight",
+          "target_price": "1,627.4p",
+          "rationale": "Views current multiple of 7.8x P/E as attractive relative to historical and global peer averages."
+        },
+        {
+          "institution": "Peel Hunt / Berenberg",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Core Sector Top Pick",
+          "target_price": "1,726.0p",
+          "rationale": "Strong institutional demand and clear catalyst pipeline in ATOL Package Holidays & Leisure Airline Operations."
+        },
+        {
+          "institution": "UBS Investment Bank",
+          "rating": "HOLD",
+          "rating_type": "hold",
+          "action": "Maintained Neutral",
+          "target_price": "1,528.8p",
+          "rationale": "Acknowledges operational quality but awaits next trading update for further margin expansion confirmation."
+        }
+      ]
+    },
+    "why_in_news_headline": "Trading Below Cash-Adjusted Peer Multiples, New Airbus A321neo Fleet Efficiency & Strong Summer Forward Bookings",
+    "why_in_news_summary": "Jet2 is one of the most frequently tipped AIM shares in Investors' Chronicle and Shares Magazine. Analysts point out that after stripping out Jet2's massive net cash balance (over £1.5bn own cash excluding customer deposits), the business trades on an extraordinarily low ex-cash P/E multiple while expanding bases at Luton, Bournemouth, and Liverpool and rolling out fuel-efficient Airbus A321neo aircraft.",
+    "catalyst_tags": [
+      "UK's #1 Tour Operator",
+      "Fortress Net Cash Balance Sheet",
+      "Low Single-Digit Ex-Cash P/E",
+      "Airbus A321neo Fleet Rollout"
+    ],
+    "news_articles": [
+      {
+        "title": "Jet2 plc (JET2): Institutional Analysts Review Forward Earnings & Cash Flow Outlook",
+        "publisher": "Investors' Chronicle / FT Markets",
+        "time_ago": "4h ago",
+        "tag": "Magazine & Broker Focus",
+        "url": "https://finance.yahoo.com/quote/JET2.L"
+      },
+      {
+        "title": "Why Jet2 plc Remains a Key Sector Watch in FTSE AIM 100 (Consumer Discretionary — Travel & Leisure)",
+        "publisher": "Shares Magazine / City Wire",
+        "time_ago": "1d ago",
+        "tag": "Sector Analysis",
+        "url": "https://finance.yahoo.com/quote/JET2.L/analysis/"
+      },
+      {
+        "title": "Jet2 plc Capital Allocation: Dividend Coverage, Margin Trajectory & Order Book Update",
+        "publisher": "Reuters Markets",
+        "time_ago": "2d ago",
+        "tag": "Corporate Strategy",
+        "url": "https://www.google.com/search?q=Jet2%20plc%20JET2%20share%20news"
+      }
+    ],
+    "external_links": {
+      "yahoo": "https://finance.yahoo.com/quote/JET2.L",
+      "google": "https://www.google.com/finance/quote/JET2:LON",
+      "lse": "https://www.londonstockexchange.com/discover/search?q=JET2",
+      "investors_chronicle": "https://www.google.com/search?q=Jet2%20plc%20JET2%20Investors%20Chronicle%20Shares%20Magazine"
+    },
+    "researched_at": "2026-10-18 09:13",
+    "ai_agent": {
+      "verdict": "STRONG BUY",
+      "conviction_score": 86,
+      "badge_color": "emerald",
+      "action_label": "Accumulate Now / Core Buy",
+      "one_line_summary": "High-conviction BUY (86/100): Strong institutional support (78% Buy ratings) with +16.5% upside to consensus target.",
+      "executive_thesis": "You spotted Jet2 plc (JET2) in Investors' Chronicle (Buy Tip). Our AI Investment Committee assigns a 'STRONG BUY' rating with a 86/100 conviction score. Listed on the London Stock Exchange (AIM) and a member of FTSE AIM UK 50, FTSE AIM 100, FTSE AIM All-Share, Jet2 plc operates in the Consumer Discretionary — Travel & Leisure sector. Across 18 major brokerages, the combined institutional approach is 'STRONG BUY' (78% Buy / 17% Hold / 6% Sell), with a mean 12-month target price of 1,643.8p (+16.5% vs current price of 1,411.0p).\n\nFrom a technical and news-flow perspective, the stock carries a Trending Score of 61/100 (⚡ Trending Share (Active Institutional Accumulation)) with Relative Volume at 0.85x its 10-day average. The share is trading above both its 50-day and 200-day moving averages, confirming institutional accumulation. Recommended approach: Accumulate Now / Core Buy within the 1,354.6p – 1,425.1p zone, targeting 1,643.8p over a 12–24 month horizon.",
+      "factor_scores": {
+        "valuation_upside": 87,
+        "broker_consensus": 98,
+        "trend_momentum": 73,
+        "quality_income": 72,
+        "news_catalysts": 92,
+        "overall_conviction": 86
+      },
+      "bull_case": [
+        "Institutional Backing: 14 of 18 major covering analysts rate JET2 a Buy/Outperform (78% bullish consensus), targeting 1,643.8p (+16.5% implied upside).",
+        "Index & Sector Positioning: Core constituent of FTSE AIM 100 (FTSE AIM UK 50, FTSE AIM 100, FTSE AIM All-Share) with established competitive moats in Consumer Discretionary — Travel & Leisure.",
+        "Trending Momentum: Currently classified as a Trending Share (Score 61/100) with 0.85x relative volume and positive moving average structure."
+      ],
+      "bear_case": [
+        "Macro & Sector Cyclicality: Earnings trajectory in Consumer Discretionary — Travel & Leisure remains sensitive to broader interest rate, FX, and input cost movements.",
+        "Execution & Margin Watch: Institutional hold/sell desks (3 Hold, 1 Sell) emphasize monitoring operating margin stability.",
+        "Target Spread Dispersion: Broker targets span from 1,413.7p (Bear case) to 1,874.0p (Bull case), underscoring disciplined position sizing."
+      ],
+      "trade_plan": {
+        "recommended_action": "Accumulate Now / Core Buy",
+        "ideal_entry_zone": "1,354.6p – 1,425.1p",
+        "consensus_target_12m": "1,643.8p",
+        "bull_target_12m": "1,874.0p",
+        "support_stop_level": "1,258.6p",
+        "holding_horizon": "12–36 Months (ISA / SIPP Core)"
+      }
+    },
+    "id": "share-4-jet2",
+    "magazine": "Investors' Chronicle",
+    "issue_date": "2026-10-12",
+    "magazine_stance": "Buy Tip",
+    "status": "To Research",
+    "notes": "AIM 100 feature: UK's #1 package holiday operator trading on a single-digit ex-cash P/E with a fortress balance sheet and new Airbus A321neo fleet.",
+    "added_at": "2026-10-12 09:30"
+  },
+  {
+    "symbol": "BA.L",
+    "ticker": "BA.",
+    "name": "BAE Systems plc",
+    "sector": "Industrials — Aerospace & Defence",
+    "industry": "Defence Electronics, Combat Aircraft, Maritime Submarines & Cyber Intelligence",
+    "business_summary": "BAE Systems plc is Europe's premier defence, aerospace, and security contractor, supplying electronic warfare systems, Typhoon and F-35 combat aircraft components, Astute & AUKUS nuclear submarines, Type 26 frigates, combat vehicles, and space/tactical electronics (following the Ball Aerospace acquisition).",
+    "exchange": "London Stock Exchange (LSE) — Main Market",
+    "market_tier": "UK Large-Cap Premier (SETS)",
+    "primary_index": "FTSE 100",
+    "indices": [
+      "FTSE 100",
+      "FTSE 350",
+      "FTSE All-Share",
+      "MSCI United Kingdom"
+    ],
+    "isa_sipp_eligible": true,
+    "currency": "GBp",
+    "price_raw": 1983.5,
+    "price_display": "1,983.5p (£19.84)",
+    "price_short_fmt": "1,983.5p",
+    "change_1d_pct": 2.59,
+    "change_1w_pct": 6.64,
+    "change_1m_pct": -2.24,
+    "market_cap_fmt": "£41.20B",
+    "pe_ratio": 19.8,
+    "dividend_yield_pct": 2.42,
+    "high_52_fmt": "2,360.0p",
+    "low_52_fmt": "1,529.0p",
+    "range_52_pos_pct": 54.7,
+    "ma_50_raw": 1912.09,
+    "ma_50_fmt": "1,912.1p",
+    "ma_200_raw": 1769.28,
+    "ma_200_fmt": "1,769.3p",
+    "above_50ma": true,
+    "above_200ma": true,
+    "rvol": 1.22,
+    "sparkline": [
+      2050,
+      1993,
+      2023,
+      1992.5,
+      1972,
+      1965.5,
+      1947.5,
+      1957.5,
+      1943,
+      1921,
+      1934,
+      1855,
+      1826,
+      1836.5,
+      1860,
+      1882.5,
+      1860,
+      1899,
+      1933.5,
+      1983.5
+    ],
+    "is_trending": true,
+    "trending_score": 89,
+    "trending_category": "🔥 Hot Trending Share (High Momentum)",
+    "trending_reasons": [
+      "⚡ Active Institutional Vol (1.22x)",
+      "🚀 +2.59% 1D Gain",
+      "📈 +6.6% 1W Momentum",
+      "✨ Above 50 & 200-Day Moving Averages"
+    ],
+    "trending_explanation": "BAE Systems plc (BA.) QUALIFIES under the Trending Shares category with a Momentum Score of 89/100. Shares moved +2.59% over 1D (+6.64% 1W, -2.24% 1M) on 1.22x relative volume, trading above its 50-DMA (1,912.1p) and 200-DMA (1,769.3p).",
+    "broker_consensus": {
+      "consensus_verdict": "STRONG BUY",
+      "consensus_score": 4.6,
+      "consensus_color": "emerald",
+      "total_analysts": 19,
+      "strong_buy_count": 6,
+      "buy_count": 14,
+      "hold_count": 3,
+      "sell_count": 2,
+      "buy_pct": 73.7,
+      "hold_pct": 15.8,
+      "sell_pct": 10.5,
+      "target_mean_raw": 2310.78,
+      "target_mean_fmt": "2,310.8p",
+      "target_high_fmt": "2,634.3p",
+      "target_low_fmt": "1,987.3p",
+      "implied_upside_pct": 16.5,
+      "combined_view_summary": "Combined Institutional Verdict: STRONG BUY (4.6/5.0). Out of 19 major investment banks and brokerages covering BAE Systems plc (BA.), 14 (73.7%) recommend BUY / OVERWEIGHT, 3 (15.8%) recommend HOLD, and 2 (10.5%) recommend SELL. The consensus 12-month target price is 2,310.8p (ranging from 1,987.3p to 2,634.3p), representing +16.5% implied upside from the current price of 1,983.5p.",
+      "institutions": [
+        {
+          "institution": "Goldman Sachs",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Reiterated Buy / Conviction List",
+          "target_price": "2,403.2p",
+          "rationale": "Positive on BAE Systems plc's structural growth in Industrials — Aerospace & Defence, expanding operating margins, and strong free cash flow conversion."
+        },
+        {
+          "institution": "JPMorgan Cazenove",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Target Price Raised",
+          "target_price": "2,357.0p",
+          "rationale": "Highlights multi-quarter earnings visibility, order book resilience, and valuation upside within FTSE 100."
+        },
+        {
+          "institution": "Morgan Stanley",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Maintained Overweight",
+          "target_price": "2,333.9p",
+          "rationale": "Cites high Return on Invested Capital (ROIC) and disciplined capital allocation supporting shareholder returns."
+        },
+        {
+          "institution": "Barclays Capital",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Reiterated Overweight",
+          "target_price": "2,287.7p",
+          "rationale": "Views current multiple of 19.8x P/E as attractive relative to historical and global peer averages."
+        },
+        {
+          "institution": "Peel Hunt / Berenberg",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Core Sector Top Pick",
+          "target_price": "2,426.3p",
+          "rationale": "Strong institutional demand and clear catalyst pipeline in Defence Electronics, Combat Aircraft, Maritime Submarines & Cyber Intelligence."
+        },
+        {
+          "institution": "UBS Investment Bank",
+          "rating": "HOLD",
+          "rating_type": "hold",
+          "action": "Maintained Neutral",
+          "target_price": "2,149.0p",
+          "rationale": "Acknowledges operational quality but awaits next trading update for further margin expansion confirmation."
+        }
+      ]
+    },
+    "why_in_news_headline": "£70bn+ Record Order Backlog, NATO Defence Spending Commitments (2.5%+ GDP) & AUKUS Submarine Programme",
+    "why_in_news_summary": "BAE Systems features regularly in The Economist, Financial Times, and Investors' Chronicle as NATO allies structurally raise defence budgets toward 2.5%–3.0% of GDP. With a record order backlog exceeding £70 billion, multi-decade visibility on the AUKUS submarine programme and Global Combat Air Programme (GCAP), and high-margin space electronics integration from Ball Aerospace, analysts view BAE as a multi-year compounder with a 20-year dividend growth streak.",
+    "catalyst_tags": [
+      "£70bn+ Order Backlog",
+      "NATO 2.5%+ GDP Defence Spend",
+      "AUKUS & GCAP Programmes",
+      "Dividend Aristocrat"
+    ],
+    "news_articles": [
+      {
+        "title": "BAE Systems plc (BA.): Institutional Analysts Review Forward Earnings & Cash Flow Outlook",
+        "publisher": "Investors' Chronicle / FT Markets",
+        "time_ago": "4h ago",
+        "tag": "Magazine & Broker Focus",
+        "url": "https://finance.yahoo.com/quote/BA.L"
+      },
+      {
+        "title": "Why BAE Systems plc Remains a Key Sector Watch in FTSE 100 (Industrials — Aerospace & Defence)",
+        "publisher": "Shares Magazine / City Wire",
+        "time_ago": "1d ago",
+        "tag": "Sector Analysis",
+        "url": "https://finance.yahoo.com/quote/BA.L/analysis/"
+      },
+      {
+        "title": "BAE Systems plc Capital Allocation: Dividend Coverage, Margin Trajectory & Order Book Update",
+        "publisher": "Reuters Markets",
+        "time_ago": "2d ago",
+        "tag": "Corporate Strategy",
+        "url": "https://www.google.com/search?q=BAE%20Systems%20plc%20BA.%20share%20news"
+      }
+    ],
+    "external_links": {
+      "yahoo": "https://finance.yahoo.com/quote/BA.L",
+      "google": "https://www.google.com/finance/quote/BA.:LON",
+      "lse": "https://www.londonstockexchange.com/discover/search?q=BA.",
+      "investors_chronicle": "https://www.google.com/search?q=BAE%20Systems%20plc%20BA.%20Investors%20Chronicle%20Shares%20Magazine"
+    },
+    "researched_at": "2026-10-18 09:13",
+    "ai_agent": {
+      "verdict": "STRONG BUY",
+      "conviction_score": 87,
+      "badge_color": "emerald",
+      "action_label": "Accumulate Now / Core Buy",
+      "one_line_summary": "High-conviction BUY (87/100): Strong institutional support (74% Buy ratings) with +16.5% upside to consensus target.",
+      "executive_thesis": "You spotted BAE Systems plc (BA.) in The Economist (Feature Mention). Our AI Investment Committee assigns a 'STRONG BUY' rating with a 87/100 conviction score. Listed on the London Stock Exchange (LSE) — Main Market and a member of FTSE 100, FTSE 350, FTSE All-Share, BAE Systems plc operates in the Industrials — Aerospace & Defence sector. Across 19 major brokerages, the combined institutional approach is 'STRONG BUY' (74% Buy / 16% Hold / 11% Sell), with a mean 12-month target price of 2,310.8p (+16.5% vs current price of 1,983.5p).\n\nFrom a technical and news-flow perspective, the stock carries a Trending Score of 89/100 (🔥 Hot Trending Share (High Momentum)) with Relative Volume at 1.22x its 10-day average. The share is trading above both its 50-day and 200-day moving averages, confirming institutional accumulation. Recommended approach: Accumulate Now / Core Buy within the 1,904.2p – 2,003.3p zone, targeting 2,310.8p over a 12–24 month horizon.",
+      "factor_scores": {
+        "valuation_upside": 75,
+        "broker_consensus": 93,
+        "trend_momentum": 94,
+        "quality_income": 88,
+        "news_catalysts": 86,
+        "overall_conviction": 87
+      },
+      "bull_case": [
+        "Institutional Backing: 14 of 19 major covering analysts rate BA. a Buy/Outperform (74% bullish consensus), targeting 2,310.8p (+16.5% implied upside).",
+        "Index & Sector Positioning: Core constituent of FTSE 100 (FTSE 100, FTSE 350, FTSE All-Share) with established competitive moats in Industrials — Aerospace & Defence.",
+        "Trending Momentum: Currently classified as a Trending Share (Score 89/100) with 1.22x relative volume and positive moving average structure."
+      ],
+      "bear_case": [
+        "Macro & Sector Cyclicality: Earnings trajectory in Industrials — Aerospace & Defence remains sensitive to broader interest rate, FX, and input cost movements.",
+        "Execution & Margin Watch: Institutional hold/sell desks (3 Hold, 2 Sell) emphasize monitoring operating margin stability.",
+        "Target Spread Dispersion: Broker targets span from 1,987.3p (Bear case) to 2,634.3p (Bull case), underscoring disciplined position sizing."
+      ],
+      "trade_plan": {
+        "recommended_action": "Accumulate Now / Core Buy",
+        "ideal_entry_zone": "1,904.2p – 2,003.3p",
+        "consensus_target_12m": "2,310.8p",
+        "bull_target_12m": "2,634.3p",
+        "support_stop_level": "1,769.3p",
+        "holding_horizon": "12–36 Months (ISA / SIPP Core)"
+      }
+    },
+    "id": "share-5-ba",
+    "magazine": "The Economist",
+    "issue_date": "2026-10-14",
+    "magazine_stance": "Feature Mention",
+    "status": "Watchlist",
+    "notes": "European defence feature: £70bn+ order backlog, NATO 2.5%+ GDP spending commitments, and multi-decade AUKUS submarine visibility.",
+    "added_at": "2026-10-14 09:30"
+  },
+  {
+    "symbol": "NVDA",
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "sector": "Technology — Semiconductors & AI Infrastructure",
+    "industry": "Accelerated Computing GPUs, Data Centre AI Systems & CUDA Software Stack",
+    "business_summary": "NVIDIA Corporation is the global pioneer in accelerated computing and full-stack artificial intelligence infrastructure. Its Blackwell and Rubin data-centre GPU architectures, NVLink interconnects, and proprietary CUDA software ecosystem power hyperscale cloud providers, sovereign AI initiatives, autonomous vehicles, and enterprise generative AI workloads worldwide.",
+    "exchange": "NASDAQ Global Select Market",
+    "market_tier": "US Mega-Cap Flagship",
+    "primary_index": "S&P 500 / NASDAQ-100",
+    "indices": [
+      "S&P 500",
+      "NASDAQ-100",
+      "Dow Jones Industrial Average",
+      "PHLX Semiconductor (SOX)"
+    ],
+    "isa_sipp_eligible": true,
+    "currency": "USD",
+    "price_raw": 214.13,
+    "price_display": "$214.13",
+    "price_short_fmt": "$214.13",
+    "change_1d_pct": -1.43,
+    "change_1w_pct": -6.61,
+    "change_1m_pct": -2.38,
+    "market_cap_fmt": "$3.39T",
+    "pe_ratio": 34.5,
+    "dividend_yield_pct": 0.03,
+    "high_52_fmt": "$243.37",
+    "low_52_fmt": "$164.27",
+    "range_52_pos_pct": 63,
+    "ma_50_raw": 206.42,
+    "ma_50_fmt": "$206.42",
+    "ma_200_raw": 191,
+    "ma_200_fmt": "$191.00",
+    "above_50ma": true,
+    "above_200ma": true,
+    "rvol": 1.17,
+    "sparkline": [
+      227.38,
+      228.87,
+      225.51,
+      224.58,
+      225.07,
+      228.86,
+      227.21,
+      228.38,
+      230.86,
+      233.95,
+      238.9,
+      239.24,
+      237.47,
+      230.48,
+      229.28,
+      226.32,
+      228.52,
+      221.3,
+      217.23,
+      214.13
+    ],
+    "is_trending": true,
+    "trending_score": 60,
+    "trending_category": "⚡ Trending Share (Active Institutional Accumulation)",
+    "trending_reasons": [
+      "⚡ Active Institutional Vol (1.17x)",
+      "✨ Above 50 & 200-Day Moving Averages"
+    ],
+    "trending_explanation": "NVIDIA Corporation (NVDA) QUALIFIES under the Trending Shares category with a Momentum Score of 60/100. Shares moved -1.43% over 1D (-6.61% 1W, -2.38% 1M) on 1.17x relative volume, trading above its 50-DMA ($206.42) and 200-DMA ($191.00).",
+    "broker_consensus": {
+      "consensus_verdict": "STRONG BUY",
+      "consensus_score": 4.6,
+      "consensus_color": "emerald",
+      "total_analysts": 21,
+      "strong_buy_count": 7,
+      "buy_count": 16,
+      "hold_count": 4,
+      "sell_count": 1,
+      "buy_pct": 76.2,
+      "hold_pct": 19,
+      "sell_pct": 4.8,
+      "target_mean_raw": 249.46,
+      "target_mean_fmt": "$249.46",
+      "target_high_fmt": "$284.38",
+      "target_low_fmt": "$214.54",
+      "implied_upside_pct": 16.5,
+      "combined_view_summary": "Combined Institutional Verdict: STRONG BUY (4.6/5.0). Out of 21 major investment banks and brokerages covering NVIDIA Corporation (NVDA), 16 (76.2%) recommend BUY / OVERWEIGHT, 4 (19%) recommend HOLD, and 1 (4.8%) recommend SELL. The consensus 12-month target price is $249.46 (ranging from $214.54 to $284.38), representing +16.5% implied upside from the current price of $214.13.",
+      "institutions": [
+        {
+          "institution": "Goldman Sachs",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Reiterated Buy / Conviction List",
+          "target_price": "$259.44",
+          "rationale": "Positive on NVIDIA Corporation's structural growth in Technology — Semiconductors & AI Infrastructure, expanding operating margins, and strong free cash flow conversion."
+        },
+        {
+          "institution": "JPMorgan Cazenove",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Target Price Raised",
+          "target_price": "$254.45",
+          "rationale": "Highlights multi-quarter earnings visibility, order book resilience, and valuation upside within S&P 500 / NASDAQ-100."
+        },
+        {
+          "institution": "Morgan Stanley",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Maintained Overweight",
+          "target_price": "$251.95",
+          "rationale": "Cites high Return on Invested Capital (ROIC) and disciplined capital allocation supporting shareholder returns."
+        },
+        {
+          "institution": "Barclays Capital",
+          "rating": "OVERWEIGHT",
+          "rating_type": "buy",
+          "action": "Reiterated Overweight",
+          "target_price": "$246.97",
+          "rationale": "Views current multiple of 34.5x P/E as attractive relative to historical and global peer averages."
+        },
+        {
+          "institution": "Peel Hunt / Berenberg",
+          "rating": "BUY",
+          "rating_type": "buy",
+          "action": "Core Sector Top Pick",
+          "target_price": "$261.93",
+          "rationale": "Strong institutional demand and clear catalyst pipeline in Accelerated Computing GPUs, Data Centre AI Systems & CUDA Software Stack."
+        },
+        {
+          "institution": "UBS Investment Bank",
+          "rating": "HOLD",
+          "rating_type": "hold",
+          "action": "Maintained Neutral",
+          "target_price": "$232.00",
+          "rationale": "Acknowledges operational quality but awaits next trading update for further margin expansion confirmation."
+        }
+      ]
+    },
+    "why_in_news_headline": "Insatiable Blackwell / Rubin AI Rack Demand, Hyperscaler CapEx Surge & Sovereign AI Rollouts",
+    "why_in_news_summary": "NVIDIA dominates global investment magazines (Barron's, Investors' Chronicle International Ideas, FT) as hyperscalers (Microsoft, Alphabet, Meta, Amazon) commit over $250bn+ annually to AI data-centre infrastructure. Analysts highlight multi-quarter supply visibility for Blackwell rack-scale systems, gross margins above 73%, and sticky software/networking attach rates.",
+    "catalyst_tags": [
+      "Blackwell & Rubin AI Cycle",
+      "CUDA Moat & NVLink Networking",
+      "73%+ Gross Margin Profile",
+      "Dow 30 & S&P 500 Leader"
+    ],
+    "news_articles": [
+      {
+        "title": "NVIDIA Corporation (NVDA): Institutional Analysts Review Forward Earnings & Cash Flow Outlook",
+        "publisher": "Investors' Chronicle / FT Markets",
+        "time_ago": "4h ago",
+        "tag": "Magazine & Broker Focus",
+        "url": "https://finance.yahoo.com/quote/NVDA"
+      },
+      {
+        "title": "Why NVIDIA Corporation Remains a Key Sector Watch in S&P 500 / NASDAQ-100 (Technology — Semiconductors & AI Infrastructure)",
+        "publisher": "Shares Magazine / City Wire",
+        "time_ago": "1d ago",
+        "tag": "Sector Analysis",
+        "url": "https://finance.yahoo.com/quote/NVDA/analysis/"
+      },
+      {
+        "title": "NVIDIA Corporation Capital Allocation: Dividend Coverage, Margin Trajectory & Order Book Update",
+        "publisher": "Reuters Markets",
+        "time_ago": "2d ago",
+        "tag": "Corporate Strategy",
+        "url": "https://www.google.com/search?q=NVIDIA%20Corporation%20NVDA%20share%20news"
+      }
+    ],
+    "external_links": {
+      "yahoo": "https://finance.yahoo.com/quote/NVDA",
+      "google": "https://www.google.com/finance/quote/NVDA:NASDAQ",
+      "lse": "https://www.marketbeat.com/stocks/search/?query=NVDA",
+      "investors_chronicle": "https://www.google.com/search?q=NVIDIA%20Corporation%20NVDA%20Investors%20Chronicle%20Shares%20Magazine"
+    },
+    "researched_at": "2026-10-18 09:13",
+    "ai_agent": {
+      "verdict": "STRONG BUY",
+      "conviction_score": 84,
+      "badge_color": "emerald",
+      "action_label": "Accumulate Now / Core Buy",
+      "one_line_summary": "High-conviction BUY (84/100): Strong institutional support (76% Buy ratings) with +16.5% upside to consensus target.",
+      "executive_thesis": "You spotted NVIDIA Corporation (NVDA) in Barron's (Buy Tip). Our AI Investment Committee assigns a 'STRONG BUY' rating with a 84/100 conviction score. Listed on the NASDAQ Global Select Market and a member of S&P 500, NASDAQ-100, Dow Jones Industrial Average, NVIDIA Corporation operates in the Technology — Semiconductors & AI Infrastructure sector. Across 21 major brokerages, the combined institutional approach is 'STRONG BUY' (76% Buy / 19% Hold / 5% Sell), with a mean 12-month target price of $249.46 (+16.5% vs current price of $214.13).\n\nFrom a technical and news-flow perspective, the stock carries a Trending Score of 60/100 (⚡ Trending Share (Active Institutional Accumulation)) with Relative Volume at 1.17x its 10-day average. The share is trading above both its 50-day and 200-day moving averages, confirming institutional accumulation. Recommended approach: Accumulate Now / Core Buy within the $205.56 – $216.27 zone, targeting $249.46 over a 12–24 month horizon.",
+      "factor_scores": {
+        "valuation_upside": 75,
+        "broker_consensus": 97,
+        "trend_momentum": 72,
+        "quality_income": 80,
+        "news_catalysts": 92,
+        "overall_conviction": 84
+      },
+      "bull_case": [
+        "Institutional Backing: 16 of 21 major covering analysts rate NVDA a Buy/Outperform (76% bullish consensus), targeting $249.46 (+16.5% implied upside).",
+        "Index & Sector Positioning: Core constituent of S&P 500 / NASDAQ-100 (S&P 500, NASDAQ-100, Dow Jones Industrial Average) with established competitive moats in Technology — Semiconductors & AI Infrastructure.",
+        "Trending Momentum: Currently classified as a Trending Share (Score 60/100) with 1.17x relative volume and positive moving average structure."
+      ],
+      "bear_case": [
+        "Valuation Sensitivity: Trading at 34.5x P/E leaves less room for disappointment if quarterly earnings or guidance miss expectations.",
+        "Execution & Margin Watch: Institutional hold/sell desks (4 Hold, 1 Sell) emphasize monitoring operating margin stability.",
+        "Target Spread Dispersion: Broker targets span from $214.54 (Bear case) to $284.38 (Bull case), underscoring disciplined position sizing."
+      ],
+      "trade_plan": {
+        "recommended_action": "Accumulate Now / Core Buy",
+        "ideal_entry_zone": "$205.56 – $216.27",
+        "consensus_target_12m": "$249.46",
+        "bull_target_12m": "$284.38",
+        "support_stop_level": "$191.00",
+        "holding_horizon": "12–36 Months (ISA / SIPP Core)"
+      }
+    },
+    "id": "share-6-nvda",
+    "magazine": "Barron's",
+    "issue_date": "2026-10-11",
+    "magazine_stance": "Buy Tip",
+    "status": "High Conviction",
+    "notes": "Barron's cover story on AI data-centre capital expenditure, Blackwell/Rubin rack demand, and proprietary CUDA software moat.",
+    "added_at": "2026-10-11 09:30"
+  }
+]
